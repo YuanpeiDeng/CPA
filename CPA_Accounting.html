@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>CPA Accounting</title>
+</head>
+<style>
+/*基本css*/
+.title{
+    text-align: center;
+    margin:0;
+    padding: 30px;
+    background-color: #1abc9c;
+    color:#fff;
+}
+.row{
+    margin-left:0 !important;
+}
+.dropdown-content{
+    width: auto !important;
+}
+.collapsible-header{
+    font-weight: bold;
+}
+.chapterTitle{
+    border-bottom: 2px solid #aaa;
+}
+.line{
+    border:1px solid #ccc;
+}
+/*end*/
+/*会计基础*/
+.kemu > thead{
+    font-size: 1.5em;
+}
+.modal-header{
+    border-bottom:2px solid #aaa;
+}
+/*end*/
+</style>
+<script>
+$(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+</script>
+<body>
+    <div class="row title">
+        <h2 style="margin:0;">Accounting</h2>
+    </div>
+    <div class="col hide-on-small-only m3 l2">
+        <ul class="section table-of-contents" style="position:fixed">
+            <li><a href="#Chapter0">0.会计基础</a></li>
+            <li><a href="#Chapter6">6.投资性房地产</a></li>
+            <li><a href="#Chapter8">8.长期股权投资<br>&emsp;与企业合并</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <!-- 会计基础 -->
+        <div class="row chapter section scrollspy" id="Chapter0">
+            <div class="row chapterTitle">
+                <h3>会计基础</h3>
+            </div>
+            <!-- 会计科目 -->
+            <div class="row">
+                <blockquote><h5>会计科目</h5></blockquote>
+                <!-- 资产类 -->
+                <div class="row AssetTable">
+                    <div class="row"><h5 style="text-align:center"><a>资产类</a></h5></div>
+                    <!-- table left -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>库存现金</td></tr>
+                                <tr><td>银行存款</td></tr>
+                                <tr><td>其他货币资金</td></tr>
+                                <tr>
+                                    <td>
+                                        <!-- Modal Trigger -->
+                                        <a class="modal-trigger" href="#Trading Securities">交易性金融资产</a>
+                                    </td>
+                                    <!-- Modal Structure -->
+                                    <div id="Trading Securities" class="modal modal-fixed-footer">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4>交易性金融资产</h4>
+                                            </div>
+                                            <p>企业为了近期内出售以赚取差价而取得的金融资产</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <tr><td>应收票据</td></tr>
+                                <tr><td>应收帐款</td></tr>
+                                <tr><td>预付账款</td></tr>
+                                <tr><td>应收股利</td></tr>
+                                <tr><td>应收利息</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table middle -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>其他应收款</td></tr>
+                                <tr>
+                                    <td>
+                                        <!-- Modal Trigger -->
+                                        <a class="modal-trigger" href="#Bad Debt Reserve">坏账准备</a>
+                                    </td>
+                                    <!-- Modal Structure -->
+                                    <div id="Bad Debt Reserve" class="modal modal-fixed-footer">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4>坏账准备</h4>
+                                            </div>
+                                            <p>应收账款等的备抵账户</p>
+                                            <p>借方：实际发生坏账及冲回多提坏账（减少）</p>
+                                            <p>贷方：计提坏账准备（增加），期末余额在贷方</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <tr><td>原材料</td></tr>
+                                <tr><td>库存商品</td></tr>
+                                <tr><td>存货跌价准备</td></tr>
+                                <tr><td>持有至到期投资</td></tr>
+                                <tr><td>可供出售金融资产</td></tr>
+                                <tr><td>长期股权投资</td></tr>
+                                <tr><td>长期股权投资减值准备</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table right -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>投资性房地产</td></tr>
+                                <tr><td>固定资产</td></tr>
+                                <tr><td>累计折旧</td></tr>
+                                <tr><td>固定资产减值准备</td></tr>
+                                <tr><td>在建工程</td></tr>
+                                <tr><td>无形资产</td></tr>
+                                <tr><td>累计摊销</td></tr>
+                                <tr><td>无形资产减值准备</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 负债类 -->
+                <div class="row LiabilityTable">
+                    <div class="row"><h5 style="text-align:center;"><a>负债类</a></h5></div>
+                    <!-- table left -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>短期借款</td></tr>
+                                <tr><td>交易性金额负债</td></tr>
+                                <tr><td>应付票据</td></tr>
+                                <tr><td>应付账款</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table middle -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>预收账款</td></tr>
+                                <tr>
+                                    <td>
+                                        <!-- Modal Trigger -->
+                                        <a class="modal-trigger" href="#Payroll Payable">应付职工薪酬</a>
+                                    </td>
+                                    <!-- Modal Structure -->
+                                    <div id="Payroll Payable" class="modal modal-fixed-footer">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4>应付职工薪酬</h4>
+                                            </div>
+                                            <p>包括：职工工资、奖金、津贴和补贴，职工福利费，医疗、养老、失业、工伤、生育等社会保险费，
+                                            住房公积金，工会经费，非货币性福利，职工教育经费。</p>
+                                            <p>借方：企业实际发放的职工薪酬数额</p>
+                                            <p>贷方：企业已分配记入有关成本费用项目的职工薪酬数额</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class='dropdown-button' href='#' data-activates='dropdown1'>应交税费<i class="material-icons right">arrow_drop_down</i></a>
+                                        <!-- 应交税费 Dropdown Structure -->
+                                        <ul id='dropdown1' class='dropdown-content'>
+                                            <!-- 应交增值税Modal Trigger -->
+                                            <li><a class="modal-trigger" href="#Value Added Tax Payable">——应交增值税</a></li>
+                                            <li class="divider"></li>
+                                            <li><a>——未交增值税</a></li>
+                                            <li class="divider"></li>
+                                            <li><a>——预缴增值税</a></li>
+                                            <li class="divider"></li>
+                                            <li><a>——待抵扣进项税额</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr><td>应付股利</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table right -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>其他应付款</td></tr>
+                                <tr><td>长期借款</td></tr>
+                                <tr><td>预计负债</td></tr>
+                                <tr><td>应付债券</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 负债类 Modal-->
+                <!-- 应交增值税 -->
+                <div id="Value Added Tax Payable" class="modal modal-fixed-footer">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>应交税费——应交增值税</h4>
+                        </div>
+                        <p>设置十个专栏，专栏只有一个方向，冲销用红字</p>
+                        <table class="bordered highlight centered">
+                            <thead>
+                                <tr><th>借方</th><th>贷方</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>进项税额</td><td>销项税额</td></tr>
+                                <tr><td>已交税金</td><td>出口退税</td></tr>
+                                <tr><td>减免税款</td><td>进项税额转出</td></tr>
+                                <tr><td>出口抵减内销产品应纳税额</td><td>转出多交增值税</td></tr>
+                                <tr><td>转出未交增值税</td><td></td></tr>
+                                <tr><td>销项税额抵减</td><td></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                    </div>
+                </div>
+
+
+                <!-- 所有者权益类 -->
+                <div class="row EquityTable">
+                    <div class="row"><h5 style="text-align:center"><a>所有者权益类</a></h5></div>
+                    <!-- table left -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>实收资本／股本</td></tr>
+                                <tr><td>盈余公积</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table middle -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <!-- Modal Trigger -->
+                                        <a class="modal-trigger" href="#Current Year Profits">本年利润</a>
+                                    </td>
+                                    <!-- Modal Structure -->
+                                    <div id="Current Year Profits" class="modal modal-fixed-footer">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4>本年利润</h4>
+                                            </div>
+                                            <p>用途：核算企业当期实现的净利润。</p>
+                                            <p>所有损益类账户期末均结转至“本年利润”账户</p>
+                                            <p>借方：期末各费用损失转入数</p>
+                                            <p>贷方：期末各收入账户转入数</p>
+                                            <p>期末若为借方余额，则表示亏损数额。年度终了，将全部余额结转到“利润分配-未分配利润”账户中，结转后无余额。</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <tr><td>利润分配</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table right -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>其他综合收益</td></tr>
+                                <tr><td>资本公积</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 成本类 -->
+                <div class="row CostTable">
+                    <div class="row"><h5 style="text-align:center"><a>成本类</a></h5></div>
+                    <!-- table left -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>生产成本</td></tr>
+                                <tr><td>制造费用</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table middle -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>劳务成本</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table right -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>研发支出</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 损益类 -->
+                <div class="row ProfitAndLossTable">
+                    <div class="row"><h5 style="text-align:center"><a>损益类</a></h5></div>
+                    <!-- table left -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>主营业务收入</td></tr>
+                                <tr><td>其他业务收入</td></tr>
+                                <tr><td>主营业务成本</td></tr>
+                                <tr><td>其他业务成本</td></tr>
+                                <tr><td>资产减值损失</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table middle -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>公允价值变动损益</td></tr>
+                                <tr><td>投资收益</td></tr>
+                                <tr><td>营业外收入</td></tr>
+                                <tr><td>营业外支出</td></tr>
+                                <tr><td>税金及附加</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table right -->
+                    <div class="col m4 s4">
+                        <table class="bordered highlight kemu">
+                            <tbody>
+                                <tr><td>销售费用</td></tr>
+                                <tr><td>管理费用</td></tr>
+                                <tr><td>财务费用</td></tr>
+                                <tr><td>其他收益</td></tr>
+                                <tr><td>所得税费用</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end会计科目 -->
+        </div>
+
+        <!-- 6.投资性房地产 -->
+        <div class="row chapter section scrollspy" id="Chapter6">
+            <div class="row chapterTitle">
+                <h3>第六章 投资性房地产</h3>
+            </div>
+            <!-- 计量模式 -->
+            <div class="row">
+                <blockquote><h5>两种后续计量模式</h5></blockquote>
+                <table class="bordered highlight">
+                    <thead>
+                        <tr><th>项目</th><th>成本模式</th><th>公允价值模式</th><tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>初始确认</td><td>记入“投资性房地产”科目</td><td>记入“投资性房地产——成本”科目</td>tr>
+                        <tr><td>折旧或摊销</td><td>同固定／无形资产处理原则</td><td>不计提折旧或摊销</td></tr>
+                        <tr><td>减值</td><td>按《企业会计准则第8号——资产减值》计提</td><td>不计提减值</td></tr>
+                        <tr><td>公允价值变动</td><td>不确认</td><td>确认并记入“公允价值变动损益”科目</td></tr>
+                        <tr><td>转换</td><td></td><td></td></tr>
+                        <tr><td>处置</td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row line"></div>
+
+            <!-- 转换 -->
+            <div class="row">
+                <h5>投资性房地产转换为非投资性房地产</h5>
+                <div class="row">
+                    <blockquote>一、转为自用房：</blockquote>
+                    <p>1.成本模式：</p>
+                    <p>借：固定资产</p>
+                    <p>&emsp;&emsp;投资性房地产累计折旧</p>
+                    <p>&emsp;&emsp;贷：投资性房地产</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;累计折旧</p>
+                    <p>2.公允价值模式：</p>
+                    <p>借：固定资产</p>
+                    <p>&emsp;&emsp;贷：投资性房地产——成本</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;投资性房地产——公允价值变动</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;公允价值变动损益(差额>0，赚了)</p>
+                </div>
+                <div class="row">
+                    <blockquote>二、转为存货：</blockquote>
+                    <p>1.成本模式：</p>
+                    <p>借：开发产品</p>
+                    <p>&emsp;&emsp;投资性房地产累计折旧(摊销)</p>
+                    <p>&emsp;&emsp;投资性房地产减值准备</p>
+                    <p>&emsp;&emsp;贷：投资性房地产</p>
+                    <p>2.公允价值模式：</p>
+                    <p>借：开发产品</p>
+                    <p>&emsp;&emsp;贷：投资性房地产——成本</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;投资性房地产——公允价值变动</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;公允价值变动损益(差额>0，赚了)</p>
+                </div>
+                <div class="row line"></div>
+                <h5>非投资性房地产转换为投资性房地产</h5>
+                <div class="row">
+                    <blockquote>一、成本模式后续计量：</blockquote>
+                    <p>1.以存货转：</p>
+                    <p>借：投资性房地产</p>
+                    <p>&emsp;&emsp;存货跌价准备</p>
+                    <p>&emsp;&emsp;贷：开发产品</p>
+                    <p>2.以自用房地产转：</p>
+                    <p>借：投资性房地产</p>
+                    <p>&emsp;&emsp;累计摊销／折旧</p>
+                    <p>&emsp;&emsp;固定／无形资产减值准备</p>
+                    <p>&emsp;&emsp;贷：固定／无形资产</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;投资性房地产累计折旧</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;投资性房地产减值准备</p>
+                </div>
+                <div class="row">
+                    <blockquote>二、公允价值后续计量：(p.77)</blockquote>
+                    <p>1.以存货转：</p>
+                    <p>借：投资性房地产——成本</p>
+                    <p>&emsp;&emsp;存货跌价准备</p>
+                    <p>&emsp;&emsp;公允价值变动损益（公允价值 < 账面价值）</p>
+                    <p>&emsp;&emsp;贷：开发产品</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;其他综合收益（公允价值 > 账面价值）</p>
+                    <p>2.以自用房地产转：</p>
+                    <p>借：投资性房地产——成本</p>
+                    <p>&emsp;&emsp;累计摊销／折旧</p>
+                    <p>&emsp;&emsp;固定／无形资产减值准备</p>
+                    <p>&emsp;&emsp;公允价值变动损益（公允价值 < 账面价值）</p>
+                    <p>&emsp;&emsp;贷：固定／无形资产</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;投资性房地产累计折旧</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;投资性房地产减值准备</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;其他综合收益（公允价值 > 账面价值）</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row chapter section scrollspy" id="Chapter8">
+            <div class="row chapterTitle">
+                <h3>第八章 长期股权投资与企业合并</h3>
+            </div>
+            <h5>一、基本概念</h5>
+            <div class="row">
+                <blockquote>联营企业</blockquote>
+                <p>1.在董事会或类似权力机构中派有代表。</p>
+                <p>2.参与被投资单位财务和经营政策制定过程。</p>
+                <p>3.与被投资单位之间发生重要交易。</p>
+                <p>4.向被投资单位派出管理人员。</p>
+                <p>5.向被投资单位提供关键技术资料。</p>
+            </div>
+            <div class="row">
+                <blockquote>合营企业</blockquote>
+                <p>1.各参与方均受到合营安排的约束。</p>
+                <p>2.两个或以上参与方对该安排实施<b>共同控制</b>。</p>
+                <p>3.任何一个参与方不能单独控制该安排。</p>
+            </div>
+            <h5>二、长期股权投资的确认与初始计量</h5>
+            <div class="row">
+                <blockquote>权益法：投资单位对被投资单位能够实施<b>共同控制或重大影响</b></blockquote>
+                <blockquote>成本法：投资单位能够对被投资单位<b>实施控制</b></blockquote>
+                <p>也可以这样理解：成本法是用来核算自己家的东西，权益法用来核算不是自己家但是和自己有关联的东西。</p>
+                <blockquote>企业合并以外的方式取得长期股权投资，发生的直接费用记入投资成本；支付券商佣金冲减资本公积</blockquote>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Accounting</h5>
+                    <p class="grey-text text-lighten-4">Yuanpei Deng</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#"></a></li>
+                        <li><a class="grey-text text-lighten-3" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class="footer-copyright">
+        <div class="container">
+            &copy 2017 Copyright Text
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
