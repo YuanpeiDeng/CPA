@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages @@@@
+## Welcome to GitHub Pages
+
+[CPA_Accounting](https://yuanpeideng.github.io/CPA/CPA_Accounting.html)
 
 You can use the [editor on GitHub](https://github.com/YuanpeiDeng/CPA/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -26,7 +28,6 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-[ACCTG](https://yuanpeideng.github.io/CPA/CPA_Accounting.html)
 
 ### Jekyll Themes
 
