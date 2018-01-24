@@ -25,8 +25,8 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-[Link](https://yuanpeideng.github.io/CPA/CPA_Accounting.html)
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+[ACCTG](https://yuanpeideng.github.io/CPA/CPA_Accounting.html)
 
 ### Jekyll Themes
 
