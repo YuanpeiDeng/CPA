@@ -71,8 +71,10 @@ $(document).ready(function(){
     <div class="col hide-on-small-only m3 l2">
         <ul class="section table-of-contents" style="position:fixed">
             <li><a href="#Chapter0">0.会计基础</a></li>
+            <li><a href="#Chapter3">3.存货</a></li>
             <li><a href="#Chapter6">6.投资性房地产</a></li>
             <li><a href="#Chapter8">8.长期股权投资<br>&emsp;与企业合并</a></li>
+            <li><a href="#Chapter9">9.资产减值</a></li>
         </ul>
     </div>
     <div class="container">
@@ -400,6 +402,41 @@ $(document).ready(function(){
             <!-- end会计科目 -->
         </div>
 
+        <!-- 存货 -->
+        <div class="row chapter section scrollspy" id="Chapter3">
+            <div class="row chapterTitle">
+                <h3>第三章 存货</h3>
+            </div>
+            <!-- 存货成本的结转 -->
+            <div class="row">
+                <blockquote><h5>存货成本的结转</h5></blockquote>
+                <!-- 对外销售商品／材料结转成本 -->
+                <div class="row">
+                    <b>（一）对外销售商品／材料结转成本</b>
+                    <p>借：主营／其他业务成本</p>
+                    <p>&emsp;&emsp;存货跌价准备</p>
+                    <p>&emsp;&emsp;贷：库存商品／原材料</p>
+                    <b style="color:Tomato;">因为存货已出售，所以冲减存货跌价准备时不能冲减资产减值损失。尚未出售的存货期末可以转回。</b>
+                    <a href="#Chapter9">To 资产减值</a>
+                </div>
+                <!-- 包装物的会计处理 -->
+                <div class="row">
+                    <b>（二）包装物的会计处理</b>
+                    <p>1.生产领用</p>
+                    <p>借：制造费用</p>
+                    <p>&emsp;&emsp;贷：周转材料——包装物</p>
+                    <p>2.出<b>借</b>包装物及随同产品出售<b>不单独</b>计价的包装物</p>
+                    <p>借：销售费用</p>
+                    <p>&emsp;&emsp;贷：周转材料——包装物</p>
+                    <b>因为出售却没有收入，且在销售环节所发生，所以记入销售费用</b>
+                    <p>3.出<b>祖</b>包装物及随同产品出售<b>单独</b>计价的包装物</p>
+                    <p>借：其他业务成本</p>
+                    <p>&emsp;&emsp;贷：周转材料——包装物</p>
+                    <b>*没有形成收入的，包装物摊销费用记入销售费用；有收入的记入其他业务收入，成本记入其他业务成本</b>
+                </div>
+            </div>
+        </div>
+
         <!-- 6.投资性房地产 -->
         <div class="row chapter section scrollspy" id="Chapter6">
             <div class="row chapterTitle">
@@ -491,6 +528,7 @@ $(document).ready(function(){
             </div>
         </div>
 
+        <!-- 8.长期股权投资与企业合并 -->
         <div class="row chapter section scrollspy" id="Chapter8">
             <div class="row chapterTitle">
                 <h3>第八章 长期股权投资与企业合并</h3>
@@ -516,6 +554,34 @@ $(document).ready(function(){
                 <blockquote>成本法：投资单位能够对被投资单位<b>实施控制</b></blockquote>
                 <p>也可以这样理解：成本法是用来核算自己家的东西，权益法用来核算不是自己家但是和自己有关联的东西。</p>
                 <blockquote>企业合并以外的方式取得长期股权投资，发生的直接费用记入投资成本；支付券商佣金冲减资本公积</blockquote>
+            </div>
+        </div>
+
+        <!-- 9.资产减值 -->
+        <div class="row chapter section scrollspy" id="Chapter9">
+            <div class="row chapterTitle">
+                <h3>第九章 资产减值</h3>
+            </div>
+            <!-- 资产减值损失的确认与计量 -->
+            <div class="row">
+                <blockquote><h5>资产减值损失的确认与计量</h5></blockquote>
+                <table class="bordered highlight">
+                    <thead>
+                        <tr><th>资产类别</th><th>减值后计量基础</th><th>减值是否可以转回</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>存货</td><td>可变现净值</td><td>可以</td></tr>
+                        <tr><td>固定资产</td><td>可收回金额</td><td>不可以</td></tr>
+                        <tr><td>投资性房地产（成本模式）</td><td>可收回金额</td><td>不可以</td></tr>
+                        <tr><td>长期股权投资</td><td>可收回金额</td><td>不可以</td></tr>
+                        <tr><td>无形资产</td><td>可收回金额</td><td>不可以</td></tr>
+                        <tr><td>商誉</td><td>可收回金额</td><td>不可以</td></tr>
+                        <tr><td>持有至到期投资</td><td>未来现金流量现值</td><td>可以</td></tr>
+                        <tr><td>货款和应收款项</td><td>未来现金流量现值</td><td>可以</td></tr>
+                        <tr><td>可供出售金融资产</td><td>公允价值</td><td>可以</td></tr>
+                        <tr><td>递延所得税资产</td><td>未来应纳税所得额</td><td>可以</td></tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
