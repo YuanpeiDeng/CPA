@@ -69,12 +69,14 @@ $(document).ready(function(){
         <div class="col hide-on-small-only m2 l1">
             <ul class="section table-of-contents" style="position:fixed">
                 <li><a href="#Chapter0">0.会计基础知识</a></li>
+                <li><a href="#Chapter1">1.总论</a></li>
+                <li><a href="#Chapter2">2.会计政策／估计及变更</a></li>
                 <li><a href="#Chapter3">3.存货</a></li>
                 <li><a href="#Chapter4">4.固定资产</a></li>
                 <li><a href="#Chapter5">5.无形资产</a></li>
                 <li><a href="#Chapter6">6.投资性房地产</a></li>
                 <li><a href="#Chapter7">7.金融资产</a></li>
-                <li><a href="#Chapter8">8.长期股权投资<br>&emsp;与企业合并</a></li>
+                <li><a href="#Chapter8">8.长期股权投资与企业合并</a></li>
                 <li><a href="#Chapter9">9.资产减值</a></li>
                 <li><a href="#Chapter10">10.负债和所有者权益</a></li>
                 <li><a href="#Chapter11">11.收入、费用和利润</a></li>
@@ -85,7 +87,7 @@ $(document).ready(function(){
                 <li><a href="#Chapter16">16.租赁</a></li>
                 <li><a href="#Chapter17">17.财务报告</a></li>
                 <li><a href="#Chapter18">18.合并财务报表</a></li>
-                <li><a href="#Chapter19">19.资产负债表<br>&emsp;日后事项</a></li>
+                <li><a href="#Chapter19">19.资产负债表日后事项</a></li>
                 <li><a href="#Chapter20">20.每股收益</a></li>
                 <li><a href="#Chapter21">21.公允价值</a></li>
             </ul>
@@ -463,33 +465,65 @@ $(document).ready(function(){
                     <div class="row chapterTitle">
                         <h3>第四章 固定资产</h3>
                     </div>
+                    <!-- 确认与初始计量 -->
                     <div class="row">
                         <h5>确认与初始计量</h5>
-                        <blockquote>高危行业企业按照国家规定提取安全生产费</blockquote>
-                        <table class="bordered highlight">
-                            <tbody>
-                                <tr>
-                                    <td>提取安全费用时</td>
-                                    <td>借：生产成品（或当期损益）<br>&emsp;贷：专项储备</td>
-                                </tr>
-                                <tr>
-                                    <td>使用提取的安全费<br>属于费用性支出，直接冲减专项储备</td>
-                                    <td>借：专项储备<br>&emsp;贷：银行存款</td>
-                                </tr>
-                                <tr>
-                                    <td>使用提取的安全费<br>形成固定资产</td>
-                                    <td>
-                                        借：在建工程<br>&emsp;&emsp;应交税费<br>&emsp;贷：银行存款<br>&emsp;&emsp;&emsp;应付职工薪酬
-                                        <br>
-                                        借：固定资产<br>&emsp;贷：在建工程
-                                        <br>
-                                        借：专项储备<br>&emsp;贷：累计折旧
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p><b>“专项储备”科目期末余额在资产负债表所有者权益项目下“其他综合收益”和“盈余公积”之间增设“专项储备”项目反映。</b></p>
+                        <div class="row">
+                            <blockquote>高危行业企业按照国家规定提取安全生产费</blockquote>
+                            <table class="bordered highlight">
+                                <tbody>
+                                    <tr>
+                                        <td>提取安全费用时</td>
+                                        <td>借：生产成品（或当期损益）<br>&emsp;贷：专项储备</td>
+                                    </tr>
+                                    <tr>
+                                        <td>使用提取的安全费<br>属于费用性支出，直接冲减专项储备</td>
+                                        <td>借：专项储备<br>&emsp;贷：银行存款</td>
+                                    </tr>
+                                    <tr>
+                                        <td>使用提取的安全费<br>形成固定资产</td>
+                                        <td>
+                                            借：在建工程<br>&emsp;&emsp;应交税费<br>&emsp;贷：银行存款<br>&emsp;&emsp;&emsp;应付职工薪酬
+                                            <br>
+                                            借：固定资产<br>&emsp;贷：在建工程
+                                            <br>
+                                            借：专项储备<br>&emsp;贷：累计折旧
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><b>“专项储备”科目期末余额在资产负债表所有者权益项目下“其他综合收益”和“盈余公积”之间增设“专项储备”项目反映。</b></p>
+                        </div>
+
+                        <div class="row">
+                            <blockquote>存在弃置费用</blockquote>
+                            <a href="http://course.dongao.com/lecture/8886">东奥视频链接</a>
+                            <p>借：固定资产</p>
+                            <p>&emsp;贷：在建工程</p>
+                            <p>&emsp;&emsp;&emsp;预计负债</p>
+                            <p>借：财务费用（期初预计负债<b>摊余成本</b>*实际利率）</p>
+                            <p>&emsp;贷：预计负债</p>
+                            <p>借：预计负债</p>
+                            <p>&emsp;贷：银行存款</p>
+                            <p>解释公告第6号：（1）对于预计负债减少，以固定资产账面价值为限扣减固定资产成本，超出部分确认当期损益。</p>
+                            <p>（2）对于预计负债增加，增加该固定资产成本。</p>
+                            <p>例：固定资产原价50 000万元，账面价值12 500万元，预计负债20 000万元。X日重新确认预计负债现值15 000万元</p>
+                            <p>则：预计负债调减 = 20000-15000 = 5000万元，调整固定资产账面价值 = 12500-5000 = 7500万元</p>
+                            <p>具体例题 轻1 p.47</p>
+                        </div>
                     </div>
+
+                    <!-- 后续计量 -->
+                    <div class="row">
+                        <h5>后续计量</h5>
+                        <div class="row">
+                            <blockquote>固定资产折旧</blockquote>
+                            <p>1.固定资产按月计提折旧，当月增加的固定资产，当月不计提，下月起计提折旧；当月减少的固定资产，当月计提折旧，下月起不计提。与无形资产相反</p>
+                            <p>2.尚未办理竣工决算的固定资产，按照估计价值确定成本并计提折旧；待办理竣工决算后按实际成本调整原暂估价值，<b>不需要</b>调整已计提折旧额。</p>
+                            
+                        </div>
+                    </div>
+
                 </div>
 
                 <!-- 5.无形资产 -->
@@ -668,8 +702,8 @@ $(document).ready(function(){
                         <div class="col l4 offset-l2 s12">
                             <h5 class="white-text">Links</h5>
                             <ul>
-                                <li><a class="grey-text text-lighten-3" href="#"></a></li>
-                                <li><a class="grey-text text-lighten-3" href="#"></a></li>
+                                <li><a class="grey-text text-lighten-3" href="#"></a>Tax</li>
+                                <li><a class="grey-text text-lighten-3" href="#"></a>Audit</li>
                             </ul>
                         </div>
                     </div>
