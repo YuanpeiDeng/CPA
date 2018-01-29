@@ -66,7 +66,7 @@ $(document).ready(function(){
 <body>
     <div class="row" style="margin-bottom:0;">
         <!-- side nav -->
-        <div class="col hide-on-small-only m2 l1">
+        <div class="col hide-on-small-only m3 l2">
             <ul class="section table-of-contents" style="position:fixed">
                 <li><a href="#Chapter0">0.会计基础知识</a></li>
                 <li><a href="#Chapter1">1.总论</a></li>
@@ -520,10 +520,57 @@ $(document).ready(function(){
                             <blockquote>固定资产折旧</blockquote>
                             <p>1.固定资产按月计提折旧，当月增加的固定资产，当月不计提，下月起计提折旧；当月减少的固定资产，当月计提折旧，下月起不计提。与无形资产相反</p>
                             <p>2.尚未办理竣工决算的固定资产，按照估计价值确定成本并计提折旧；待办理竣工决算后按实际成本调整原暂估价值，<b>不需要</b>调整已计提折旧额。</p>
-                            
+                            <p>3.更新改造过程中，将账面价值转入在建工程，不计提折旧</p>
+                            <p>4.定期大修理期间照提折旧</p>
+                        </div>
+
+                        <div class="row">
+                            <blockquote>折旧方法</blockquote>
+                            <p>1.年限平均法</p>
+                            <p>年折旧额 = （原价-预计净残值）／预计使用年限</p>
+                            <p>2.工作量法</p>
+                            <p>单位工作量折旧额 = （原价-预计净残值）／预计总工作量</p>
+                            <p>3.双倍余额递减法</p>
+                            <p>年折旧额 = 期初固定资产<b>净值</b>*2／预计使用年限</p>
+                            <p>固定资产净值 = 原价 - 累计折旧；最后<b>两年</b>改为年限平均法</p>
+                            <p>4.年数总和法</p>
+                            <p>年折旧额 = （原价-预计净残值）* 年折旧率</p>
+                            <p>年折旧率 = 剩余可使用年数／SUM（使用年限）</p>
                         </div>
                     </div>
 
+                    <!-- 固定资产处置 -->
+                    <div class="row">
+                        <h5>固定资产处置</h5>
+                        <div class="row">
+                            <blockquote style="color:Tomato"><b>持有待售固定资产</b></blockquote>
+                            <p>满足条件：</p>
+                            <p>1.企业已经就处置该非流动资产<b>作出决议</b>。</p>
+                            <p>2.企业与受让方签订了<b>不可撤销</b>的转让协议。</p>
+                            <p>3.该项转让在<b>一年内完成</b>。</p>
+                            <p style="color:Tomato">入账价值 = 固定资产账面价值 与 <b>公允价值</b>减去处置费用 孰低计量</p>
+                            <p>原账面价值高于后者的差额，作为<b>资产减值损失</b>记入当期损益。</p>
+                            <p>注意⚠️ 持有待售固定资产作为<b style="color:Tomato">流动资产</b>列示</p>
+                            <div class="row line"></div>
+                            <p>若某项资产被归为持有待售，但后来不再满足条件时，企业应当停止将其归为持有待售，并按照下列金额较低者计量：</p>
+                            <p>1.按照之前的账面价值，假定没有归为持有待售情况下原应确认但折旧／摊销或减值进行调整后的金额</p>
+                            <p>*意思就是，从划分日至不再符合确认条件期间的折旧需要补上（追溯）</p>
+                            <p>2.决定不再出售之日的<b style="color:Tomato">可收回金额</b></p>
+                            <div class="chip">选择题</div>
+                            <div class="chip">差错更正<i class="close material-icons">close</i></div>
+                        </div>
+
+                        <div class="row">
+                            <blockquote>固定资产清查</blockquote>
+                            <p>一、盘盈</p>
+                            <p>作为前期差错处理</p>
+                            <p>借：固定资产</p>
+                            <p>&emsp;贷：以前年度损益调整</p>
+                            <p>借：以前年度损益调整</p>
+                            <p>&emsp;贷：盈余公积</p>
+                            <p>&emsp;&emsp;&emsp;利润分配——未分配利润</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- 5.无形资产 -->
@@ -531,6 +578,7 @@ $(document).ready(function(){
                     <div class="row chapterTitle">
                         <h3>第五章 无形资产</h3>
                     </div>
+
                 </div>
 
                 <!-- 6.投资性房地产 -->
