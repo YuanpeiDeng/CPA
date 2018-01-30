@@ -20,7 +20,7 @@
 /*基本css*/
 .title{
     text-align: center;
-    padding: 30px !important;
+    padding: 20px !important;
     background-color: #1abc9c;
     color:#fff;
 }
@@ -95,7 +95,7 @@ $(document).ready(function(){
 
         <!-- title -->
         <div class="col m10 s12 offset-m2 RightContent title">
-            <h2>Accounting</h2>
+            <h1>Accounting</h1>
         </div>
 
         <!-- Main Content -->
@@ -582,8 +582,8 @@ $(document).ready(function(){
                     <div class="row">
                         <h5>内部研究开发</h5>
                         <blockquote>内部研究开发支出会计处理</blockquote>
-                        <img src="img/chapter4_无形资产1.jpg"></img>
-                        <img src="img/chapter4_无形资产2.jpg"></img>
+                        <img src="img/chapter5_无形资产1.jpg"></img>
+                        <img src="img/chapter5_无形资产2.jpg"></img>
                         <p>费用化支出期末无余额，资本化支出余额记入资产负债表中的“<b>开发支出</b>”项目</p>
                     </div>
                 </div>
@@ -623,19 +623,78 @@ $(document).ready(function(){
                         <h5>投资性房地产的后续计量</h5>
                         <div class="row">
                             <blockquote>两种计量模式</blockquote>
+                            <b style="color:Tomato;">注意⚠️同一企业只能采用一种模式对所有投资性房地产进行后续计量，不得同时采用两种计量模式。</b>
                             <table class="bordered highlight">
                                 <thead>
                                     <tr><th>项目</th><th>成本模式</th><th>公允价值模式</th></tr>
                                 </thead>
                                 <tbody>
                                     <tr><td>初始确认</td><td>记入“投资性房地产”科目</td><td>记入“投资性房地产——成本”科目</td></tr>
-                                    <tr><td>折旧或摊销</td><td>同固定／无形资产处理原则</td><td>不计提折旧或摊销</td></tr>
-                                    <tr><td>减值</td><td>按《企业会计准则第8号——资产减值》计提</td><td>不计提减值</td></tr>
-                                    <tr><td>公允价值变动</td><td>不确认</td><td>确认并记入“公允价值变动损益”科目</td></tr>
-                                    <tr><td>转换</td><td>可转为公允价值模式</td><td>不可转为成本模式</td></tr>
+                                    <tr>
+                                        <td>折旧或摊销</td>
+                                        <td>
+                                            同固定／无形资产处理原则<br>
+                                            借：其他业务成本<br>
+                                            &emsp;贷：投资性房地产累计折旧／摊销
+                                        </td>
+                                        <td>不计提折旧或摊销</td>
+                                    </tr>
+                                    <tr>
+                                        <td>减值</td>
+                                        <td>
+                                            按《企业会计准则第8号——资产减值》计提<br>
+                                            借：资产减值损失<br>
+                                            &emsp;贷：投资性房地产减值准备
+                                        </td>
+                                        <td>不计提减值</td>
+                                    </tr>
+                                    <tr>
+                                        <td>收入</td>
+                                        <td>
+                                            借：银行存款<br>
+                                            &emsp;贷：其他业务收入<br>
+                                            &emsp;&emsp;&emsp;应交税费——应交增值税（销项税额）
+                                        </td>
+                                        <td>
+                                            借：银行存款<br>
+                                            &emsp;贷：其他业务收入<br>
+                                            &emsp;&emsp;&emsp;应交税费——应交增值税（销项税额）
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>公允价值变动</td>
+                                        <td>不确认</td>
+                                        <td>
+                                            确认并记入“公允价值变动损益”科目<br>
+                                            公允价值上升：<br>
+                                            借：投资性房地产——公允价值变动<br>
+                                            &emsp;贷：公允价值变动损益<br>
+                                            公允价值下降作相反分录
+                                        </td>
+                                    </tr>
+                                    <tr><td>转换</td><td>可转为公允价值模式</td><td><b style="color:Tomato;">不可转为成本模式</b></td></tr>
                                     <tr><td>处置</td><td>冲减投资性房地产账面价值</td><td>冲减投资性房地产账面价值且转销公允价值变动损益和其他综合收益</td></tr>
                                 </tbody>
                             </table>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <div class="row">
+                            <blockquote>计量模式的变更</blockquote>
+                            <p>
+                                成本模式
+                                <i class="material-icons" style="vertical-align:middle">arrow_forward</i>
+                                公允价值模式
+                                <b style="color:Tomato;">属于会计政策变更</b>
+                                <br>
+                                借：投资性房地产——成本（变更日公允价值）<br>
+                                &emsp;&emsp;投资性房地产累计折旧／摊销<br>
+                                &emsp;&emsp;投资性房地产减值准备<br>
+                                &emsp;贷：投资性房地产（原价）<br>
+                                &emsp;&emsp;&emsp;<b style="color:Tomato;">利润分配——未分配利润</b><br>
+                                &emsp;&emsp;&emsp;<b style="color:Tomato;">盈余公积</b>
+                            </p>
                         </div>
                     </div>
 
@@ -644,67 +703,138 @@ $(document).ready(function(){
                         <h5>投资性房地产的转换和处置</h5>
                         <!-- 转换 -->
                         <div class="row">
+                            <!-- 投转非 -->
                             <div class="row">
                                 <blockquote>投资性房地产转换为非投资性房地产</blockquote>
-                                <p>一、转为自用房：</p>
-                                <b>1.成本模式：</b>
-                                <p>借：固定资产</p>
-                                <p>&emsp;&emsp;投资性房地产累计折旧</p>
-                                <p>&emsp;贷：投资性房地产</p>
-                                <p>&emsp;&emsp;&emsp;累计折旧</p>
-                                <b>2.公允价值模式：</b>
-                                <p>借：固定资产</p>
-                                <p>&emsp;贷：投资性房地产——成本</p>
-                                <p>&emsp;&emsp;&emsp;投资性房地产——公允价值变动</p>
-                                <p>&emsp;&emsp;&emsp;<b style="color:Tomato;">公允价值变动损益</b>(差额>0，赚了)</p>
+                                <div class="row">
+                                    <p>一、成本模式</p>
+                                    <table class="bordered highlight">
+                                        <thead>
+                                            <tr><th>转为自用房</th><th>转为存货</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    借：固定资产<br>
+                                                    &emsp;&emsp;投资性房地产累计折旧<br>
+                                                    &emsp;贷：投资性房地产<br>
+                                                    &emsp;&emsp;&emsp;累计折旧
+                                                </td>
+                                                <td>
+                                                    借：开发产品<br>
+                                                    &emsp;&emsp;投资性房地产累计折旧(摊销)<br>
+                                                    &emsp;&emsp;投资性房地产减值准备<br>
+                                                    &emsp;贷：投资性房地产
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
-                                <p>二、转为存货：</p>
-                                <b>1.成本模式：</b>
-                                <p>借：开发产品</p>
-                                <p>&emsp;&emsp;投资性房地产累计折旧(摊销)</p>
-                                <p>&emsp;&emsp;投资性房地产减值准备</p>
-                                <p>&emsp;贷：投资性房地产</p>
-                                <b>2.公允价值模式：</b>
-                                <p>借：开发产品</p>
-                                <p>&emsp;贷：投资性房地产——成本</p>
-                                <p>&emsp;&emsp;&emsp;投资性房地产——公允价值变动</p>
-                                <p>&emsp;&emsp;&emsp;<b style="color:Tomato;">公允价值变动损益</b>(差额>0，赚了)</p>
+                                <div class="row">
+                                    <p>二、公允价值模式</p>
+                                    <table class="bordered highlight">
+                                        <thead>
+                                            <tr><th>转为自用房</th><th>转为存货</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    借：固定资产<br>
+                                                    &emsp;贷：投资性房地产——成本<br>
+                                                    &emsp;&emsp;&emsp;投资性房地产——公允价值变动<br>
+                                                    &emsp;&emsp;&emsp;<b style="color:Tomato;">公允价值变动损益</b>(差额>0，赚了)
+                                                </td>
+                                                <td>
+                                                    借：开发产品<br>
+                                                    &emsp;贷：投资性房地产——成本<br>
+                                                    &emsp;&emsp;&emsp;投资性房地产——公允价值变动<br>
+                                                    &emsp;&emsp;&emsp;<b style="color:Tomato;">公允价值变动损益</b>(差额>0，赚了)
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
 
-                            <div class="row line"></div>
-
+                            <!-- 非转投 -->
                             <div class="row">
                                 <blockquote>非投资性房地产转换为投资性房地产</blockquote>
-                                <b>一、成本模式后续计量：</b>
-                                <p>1.以存货转：</p>
-                                <p>借：投资性房地产</p>
-                                <p>&emsp;&emsp;存货跌价准备</p>
-                                <p>&emsp;贷：开发产品</p>
-                                <p>2.以自用房地产转：</p>
-                                <p>借：投资性房地产</p>
-                                <p>&emsp;&emsp;累计摊销／折旧</p>
-                                <p>&emsp;&emsp;固定／无形资产减值准备</p>
-                                <p>&emsp;贷：固定／无形资产</p>
-                                <p>&emsp;&emsp;&emsp;投资性房地产累计折旧</p>
-                                <p>&emsp;&emsp;&emsp;投资性房地产减值准备</p>
+                                <div class="row">
+                                    <p>一、成本模式</p>
+                                    <table class="bordered highlight">
+                                        <thead>
+                                            <tr><th>以自用房转</th><th>以存货转</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    借：投资性房地产<br>
+                                                    &emsp;&emsp;累计摊销／折旧<br>
+                                                    &emsp;&emsp;固定／无形资产减值准备<br>
+                                                    &emsp;贷：固定／无形资产<br>
+                                                    &emsp;&emsp;&emsp;投资性房地产累计折旧<br>
+                                                    &emsp;&emsp;&emsp;投资性房地产减值准备
+                                                </td>
+                                                <td>
+                                                    借：投资性房地产<br>
+                                                    &emsp;&emsp;存货跌价准备<br>
+                                                    &emsp;贷：开发产品
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
-                                <b>二、公允价值后续计量：(p.77)</b>
-                                <p>1.以存货转：</p>
-                                <p>借：投资性房地产——成本</p>
-                                <p>&emsp;&emsp;存货跌价准备</p>
-                                <p>&emsp;&emsp;公允价值变动损益（公允价值 < 账面价值）</p>
-                                <p>&emsp;贷：开发产品</p>
-                                <p>&emsp;&emsp;&emsp;<b style="color:Tomato;">其他综合收益</b>（公允价值 > 账面价值）</p>
-                                <p>2.以自用房地产转：</p>
-                                <p>借：投资性房地产——成本</p>
-                                <p>&emsp;&emsp;累计摊销／折旧</p>
-                                <p>&emsp;&emsp;固定／无形资产减值准备</p>
-                                <p>&emsp;&emsp;公允价值变动损益（公允价值 < 账面价值）</p>
-                                <p>&emsp;贷：固定／无形资产</p>
-                                <p>&emsp;&emsp;&emsp;投资性房地产累计折旧</p>
-                                <p>&emsp;&emsp;&emsp;投资性房地产减值准备</p>
-                                <p>&emsp;&emsp;&emsp;<b style="color:Tomato;">其他综合收益</b>（公允价值 > 账面价值）</p>
+                                <div class="row">
+                                    <p>二、公允价值模式</p>
+                                    <table class="bordered highlight">
+                                        <thead>
+                                            <tr><th>以自用房转</th><th>以存货转</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    借：投资性房地产——成本<br>
+                                                    &emsp;&emsp;累计摊销／折旧<br>
+                                                    &emsp;&emsp;固定／无形资产减值准备<br>
+                                                    &emsp;&emsp;公允价值变动损益（公允价值 - 账面价值 < 0）<br>
+                                                    &emsp;贷：固定／无形资产<br>
+                                                    &emsp;&emsp;&emsp;投资性房地产累计折旧<br>
+                                                    &emsp;&emsp;&emsp;投资性房地产减值准备<br>
+                                                    &emsp;&emsp;&emsp;<b style="color:Tomato;">其他综合收益</b>（公允价值 - 账面价值 > 0）
+                                                </td>
+                                                <td>
+                                                    借：投资性房地产——成本<br>
+                                                    &emsp;&emsp;存货跌价准备<br>
+                                                    &emsp;&emsp;公允价值变动损益（公允价值 - 账面价值 < 0）<br>
+                                                    &emsp;贷：开发产品<br>
+                                                    &emsp;&emsp;&emsp;<b style="color:Tomato;">其他综合收益</b>（公允价值 - 账面价值 > 0）
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
+                        </div>
+
+                        <!-- 处置 -->
+                        <div class="row">
+                            <blockquote>投资性房地产的处置</blockquote>
+                            <p>
+                                采用公允价值模式计量：<br>
+                                借：银行存款<br>
+                                &emsp;贷：其他业务收入<br>
+                                &emsp;&emsp;&emsp;应交税费——应交增值税（销项税额）<br>
+                                借：其他业务成本<br>
+                                &emsp;贷：投资性房地产——成本<br>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——公允价值变动<br>
+                                借：其他综合收益<br>
+                                &emsp;贷：其他业务成本<br>
+                                借：公允价值变动损益<br>
+                                &emsp;贷：其他业务成本<br>
+                                <b>其他业务成本反映的其实是历史成本，所以要将公允价值变动损益和其他综合收益冲回。</b>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -791,6 +921,47 @@ $(document).ready(function(){
                 <div class="row chapter section scrollspy" id="Chapter12">
                     <div class="row chapterTitle">
                         <h3>第十二章 非货币性资产交换</h3>
+                    </div>
+                </div>
+
+                <!-- 17.财务报告 -->
+                <div class="row chapter section scrollspy" id="Chapter17">
+                    <div class="row chapterTitle">
+                        <h3>第十七章 财务报告</h3>
+                    </div>
+                    <!-- 利润表 -->
+                    <div class="row">
+                        <h5>利润表</h5>
+
+                        <div class="row">
+                            <blockquote>利润表内容及结构</blockquote>
+                            <table class="bordered highlight">
+                                <thead>
+                                    <tr><th>项目</th><th>本期金额</th><th>上期金额</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>一、营业收入</td><td></td><td></td></tr>
+                                    <tr><td>&emsp;&emsp;减：营业成本</td><td></td><td></td></tr>
+                                    <tr><td>&emsp;&emsp;&emsp;&emsp;税金及附加</td><td></td><td></td></tr>
+                                    <tr><td>&emsp;&emsp;&emsp;&emsp;销售费用</td><td></td><td></td></tr>
+                                    <tr><td>&emsp;&emsp;&emsp;&emsp;管理费用</td><td></td><td></td></tr>
+                                    <tr><td>&emsp;&emsp;&emsp;&emsp;财务费用</td><td></td><td></td></tr>
+                                    <tr><td>&emsp;&emsp;&emsp;&emsp;资产减值损失</td><td></td><td></td></tr>
+                                    <tr><td>&emsp;&emsp;&emsp;&emsp;加：公允价值变动收益（损失以“-”号填列）</td><td></td><td></td></tr>
+                                    <tr><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;投资收益（损失以“-”号填列）</td><td></td><td></td></tr>
+                                    <tr><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;其他收益</td><td></td><td></td></tr>
+                                    <tr><td>二、营业利润</td><td></td><td></td></tr>
+                                    <tr><td>&emsp;&emsp;加：营业外收入</td><td></td><td></td></tr>
+                                    <tr><td>&emsp;&emsp;减：营业外支出</td><td></td><td></td></tr>
+                                    <tr><td>三、利润总额</td><td></td><td></td></tr>
+                                    <tr><td>&emsp;&emsp;减：所得税费用</td><td></td><td></td></tr>
+                                    <tr><td>四、净利润</td><td></td><td></td></tr>
+                                    <tr><td>五、其他综合收益</td><td></td><td></td></tr>
+                                    <tr><td>六、综合收益总额</td><td></td><td></td></tr>
+                                    <tr><td>七、每股收益</td><td></td><td></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
