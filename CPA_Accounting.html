@@ -888,7 +888,9 @@ $(document).ready(function(){
                                 <tr><th>资产类别</th><th>减值后计量基础</th><th>减值是否可以转回</th></tr>
                             </thead>
                             <tbody>
-                                <tr><td>存货</td><td>可变现净值</td><td>可以</td></tr>
+                                <tr>
+                                    <td><a class="modal-trigger" href="#Chapter9_Inventory">存货</a></td><td>可变现净值</td><td>可以</td>
+                                </tr>
                                 <tr><td>固定资产</td><td>可收回金额</td><td>不可以</td></tr>
                                 <tr><td>投资性房地产（成本模式）</td><td>可收回金额</td><td>不可以</td></tr>
                                 <tr><td>长期股权投资</td><td>可收回金额</td><td>不可以</td></tr>
@@ -901,6 +903,41 @@ $(document).ready(function(){
                             </tbody>
                         </table>
                     </div>
+
+                    <!-- Modal Structure -->
+                    <!-- 存货 -->
+                    <div id="Chapter9_Inventory" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>存货跌价准备的确认和计量</h4>
+                            </div>
+                            <div class="row" style="text-align:center;">
+                                <img src="img/chapter9_存货跌价1.jpg"></img>
+                            </div>
+                            <div class="row">
+                                <div class="col m6">
+                                    <blockquote>存货跌价准备转回</blockquote>
+                                    <p>
+                                        借：存货跌价准备<br>
+                                        &emsp;贷：资产减值损失
+                                    </p>
+                                </div>
+                                <div class="col m6">
+                                    <blockquote>存货跌价准备结转</blockquote>
+                                    <p>
+                                        借：主营业务成本<br>
+                                        &emsp;贷：库存商品<br>
+                                        借：存货跌价准备<br>
+                                        &emsp;贷：主营业务成本
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                        </div>
+                    </div>
+                    <!-- Modal Ends -->
                 </div>
 
                 <!-- 10.负债和所有者权益 -->
