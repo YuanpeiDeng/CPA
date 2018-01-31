@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>CPA Accounting</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
 </head>
 <style>
 /*基本css*/
@@ -959,11 +960,20 @@ $(document).ready(function(){
                                         &emsp;贷：其他综合收益<br>
                                         &emsp;&emsp;&emsp;可供出售金融资产——公允价值变动
                                     </p>
+                                    <b>以前公允价值下降时，借记其他综合收益，不影响当期损益。计提减值准备时，要影响损益，所以要将其他综合收益转出，记贷方。如果以前公允价值上升，则借记其他综合收益。</b>
                                 </div>
                                 <div class="col m6">
                                     <blockquote>减值准备转回</blockquote>
                                     <p>一、可供出售债务工具资产损失转回记入当期损益。</p>
+                                    <p>
+                                        借：可供出售金融资产——公允价值变动<br>
+                                        &emsp;贷：资产减值损失
+                                    </p>
                                     <p>二、可供出售<b>权益</b>工具资产损失，<b style="color:Tomato">不得通过损益转回</b>，公允价值上升记入<b style="color:Tomato">其他综合收益</b>。</p>
+                                    <p>
+                                        借：可供出售金融资产——公允价值变动<br>
+                                        &emsp;贷：其他综合收益
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -999,6 +1009,8 @@ $(document).ready(function(){
                             <div class="row line"></div>
                             <div class="row">
                                 <h5>贷款的核算</h5>
+                                <a href="http://course.dongao.com/lecture/8991">书P.153 讲解</a>
+                                <a href="http://course.dongao.com/lecture/8953">书P.152 讲解</a>
                                 <div class="col m6">
                                     <blockquote>发生减值</blockquote>
                                     <p>
