@@ -996,6 +996,29 @@ $(document).ready(function(){
                                     </p>
                                 </div>
                             </div>
+                            <div class="row line"></div>
+                            <div class="row">
+                                <h5>贷款的核算</h5>
+                                <div class="col m6">
+                                    <blockquote>发生减值</blockquote>
+                                    <p>
+                                        借：资产减值损失<br>
+                                        &emsp;贷：贷款损失准备<br>
+                                        同时：<br>
+                                        借：贷款——已减值<br>
+                                        &emsp;贷：贷款（本金、利息调整）
+                                    </p>
+                                    <p>为了区分正常贷款和不良贷款，当贷款发生减值时，要将“贷款（本金、利息调整）”转入“贷款——已减值”，这样做的目的便于金融业加强贷款的管理。</p>
+                                </div>
+                                <div class="col m6">
+                                    <blockquote>资产负债表日确认利息收入</blockquote>
+                                    <p>
+                                        借：贷款损失准备（按贷款的摊余成本和实际利率计算确定的利息收入）<br>
+                                        &emsp;贷：利息收入
+                                    </p>
+                                    <p>利息增加 -> 账面价值上升 -> 冲减贷款损失准备</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
