@@ -896,8 +896,12 @@ $(document).ready(function(){
                                 <tr><td>长期股权投资</td><td>可收回金额</td><td>不可以</td></tr>
                                 <tr><td>无形资产</td><td>可收回金额</td><td>不可以</td></tr>
                                 <tr><td>商誉</td><td>可收回金额</td><td>不可以</td></tr>
-                                <tr><td>持有至到期投资</td><td>未来现金流量现值</td><td>可以</td></tr>
-                                <tr><td>货款和应收款项</td><td>未来现金流量现值</td><td>可以</td></tr>
+                                <tr>
+                                    <td><a class="modal-trigger" href="#Chapter9_HTM Securities And Others">持有至到期投资</a></td><td>未来现金流量现值</td><td>可以</td>
+                                </tr>
+                                <tr>
+                                    <td><a class="modal-trigger" href="#Chapter9_HTM Securities And Others">货款和应收款项</a></td><td>未来现金流量现值</td><td>可以</td>
+                                </tr>
                                 <tr>
                                     <td><a class="modal-trigger" href="#Chapter9_AFS Securities">可供出售金融资产</a></td><td>公允价值</td><td>可以</td>
                                 </tr>
@@ -968,6 +972,35 @@ $(document).ready(function(){
                         </div>
                     </div>
 
+                    <!-- 持有至到期投资、贷款和应收款项减值损失 -->
+                    <div id="Chapter9_HTM Securities And Others" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>持有至到期投资、贷款和应收款项减值损失</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col m6">
+                                    <blockquote>减值测试方式</blockquote>
+                                    <p>
+                                        如果单项金融资产金额比较大，则需要单独进行减值测试；如果单项金融资产数额金额不大，可以单独进行减值测试，也可采用组合的方式进行减值测试。
+                                        <br>单项测试未减值，再进入组合测试。已单项确认减值，不再进行组合测试。
+                                    </p>
+                                </div>
+                                <div class="col m6">
+                                    <blockquote>发生减值</blockquote>
+                                    <p>
+                                        借：资产减值损失<br>
+                                        &emsp;贷：持有至到期投资减值准备<br>
+                                        &emsp;&emsp;&emsp;贷款损失准备<br>
+                                        &emsp;&emsp;&emsp;坏账准备
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                        </div>
+                    </div>
                     <!-- Modal Ends -->
                 </div>
 
