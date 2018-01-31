@@ -898,7 +898,9 @@ $(document).ready(function(){
                                 <tr><td>商誉</td><td>可收回金额</td><td>不可以</td></tr>
                                 <tr><td>持有至到期投资</td><td>未来现金流量现值</td><td>可以</td></tr>
                                 <tr><td>货款和应收款项</td><td>未来现金流量现值</td><td>可以</td></tr>
-                                <tr><td>可供出售金融资产</td><td>公允价值</td><td>可以</td></tr>
+                                <tr>
+                                    <td><a class="modal-trigger" href="#Chapter9_AFS Securities">可供出售金融资产</a></td><td>公允价值</td><td>可以</td>
+                                </tr>
                                 <tr><td>递延所得税资产</td><td>未来应纳税所得额</td><td>可以</td></tr>
                             </tbody>
                         </table>
@@ -930,6 +932,34 @@ $(document).ready(function(){
                                         借：存货跌价准备<br>
                                         &emsp;贷：主营业务成本
                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                        </div>
+                    </div>
+
+                    <!-- 可供出售金融资产 -->
+                    <div id="Chapter9_AFS Securities" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>可供出售金融资产减值损失的确认和计量</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col m6">
+                                    <blockquote>计提减值准备</blockquote>
+                                    <p>
+                                        将金融资产的账面价值减记至公允价值，原公允价值变动确认的其他综合收益应当予以转出，记入当期损益。<br>
+                                        借：资产减值损失<br>
+                                        &emsp;贷：其他综合收益<br>
+                                        &emsp;&emsp;&emsp;可供出售金融资产——公允价值变动
+                                    </p>
+                                </div>
+                                <div class="col m6">
+                                    <blockquote>减值准备转回</blockquote>
+                                    <p>一、可供出售债务工具资产损失转回记入当期损益。</p>
+                                    <p>二、可供出售<b>权益</b>工具资产损失，<b style="color:Tomato">不得通过损益转回</b>，公允价值上升记入<b style="color:Tomato">其他综合收益</b>。</p>
                                 </div>
                             </div>
                         </div>
