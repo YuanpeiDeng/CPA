@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
-
+    <link rel="stylesheet" href="CPA.css" type="text/css"/>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -15,41 +15,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>CPA Accounting</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
 </head>
-<style>
-/*基本css*/
-.title{
-    text-align: center;
-    padding: 20px !important;
-    background-color: #1abc9c;
-    color:#fff;
-}
-.dropdown-content{
-    width: auto !important;
-}
-.collapsible-header{
-    font-weight: bold;
-}
-.chapterTitle{
-    border-bottom: 2px solid #aaa;
-}
-.line{
-    border:1px solid #ccc;
-}
-.RightContent{
-    border-left: 2px solid #aaa;
-}
-/*end*/
-/*会计基础*/
-.kemu > thead{
-    font-size: 1.5em;
-}
-.modal-header{
-    border-bottom:2px solid #aaa;
-}
-/*end*/
-</style>
 <script>
 $(document).ready(function(){
     // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
@@ -897,7 +863,9 @@ $(document).ready(function(){
                                 <tr><td>长期股权投资</td><td>可收回金额</td><td>不可以</td></tr>
                                 <tr><td>无形资产</td><td>可收回金额</td><td>不可以</td></tr>
                                 <tr><td>开发支出</td><td>可收回金额</td><td>不可以</td></tr>
-                                <tr><td>商誉</td><td>可收回金额</td><td>不可以</td></tr>
+                                <tr>
+                                    <td><a class="modal-trigger" href="#Chapter9_Goodwill">商誉</a></td><td>可收回金额</td><td>不可以</td>
+                                </tr>
                                 <tr>
                                     <td><a class="modal-trigger" href="#Chapter9_HTM Securities And Others">持有至到期投资</a></td><td>未来现金流量现值</td><td>可以</td>
                                 </tr>
@@ -986,6 +954,14 @@ $(document).ready(function(){
                                         借：存货跌价准备<br>
                                         &emsp;贷：主营业务成本
                                     </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col m6">
+                                    <blockquote>存货的可变现净值考虑因素</blockquote>
+                                    <p>1.以取得的确凿证据为基础</p>
+                                    <p>2.持有存货的目的</p>
+                                    <p>3.资产负债表日后事项的影响</p>
                                 </div>
                             </div>
                         </div>
@@ -1085,6 +1061,45 @@ $(document).ready(function(){
                             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
                         </div>
                     </div>
+
+                    <!-- 商誉 -->
+                    <div id="Chapter9_Goodwill" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>商誉减值测试与处理</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col m6">
+                                    <blockquote>非同一控制下</blockquote>
+                                    <table class="bordered highlight">
+                                        <thead>
+                                            <tr><th>吸收合并</th><th>控股合并</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="width:50%">
+                                                    在<b>个别财务报表</b>中列示，减值的核算在账簿中登记。（原法人资格不存在）<br>
+                                                    借：资产减值损失<br>
+                                                    &emsp;贷：商誉减值准备
+                                                </td>
+                                                <td>
+                                                    在<b>合并财务报表</b>中列示，产生于合并抵销分录中，减值的核算在合并财务报表中体现。（法人资格存在）<br>
+                                                    借：资产减值损失<br>
+                                                    &emsp;贷：商誉——商誉减值准备
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col m6">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                        </div>
+                    </div>
                     <!-- Modal Ends -->
                 </div>
 
@@ -1092,6 +1107,54 @@ $(document).ready(function(){
                 <div class="row chapter section scrollspy" id="Chapter10">
                     <div class="row chapterTitle">
                         <h3>第十章 负债和所有者权益</h3>
+                    </div>
+                    <!-- 金融负债和权益工具的区分 -->
+                    <div class="row">
+                        <h5>第一节 金融负债和权益工具的区分</h5>
+                        <div class="row line"></div>
+
+                        <div class="row">
+                            <blockquote>金融工具</blockquote>
+                            <p>分类：基本金融工具（债券、股票等）；衍生金融工具（期货、期权、互换等）</p>
+                            <p>核算：确认为金融资产、金融负债或权益工具。</p>
+                            <p>例如：股票是金融工具，发行方形成权益工具，购买方形成金融资产；发行债券也是金融工具，发行方形成金融负债，购买方形成金融资产。</p>
+                        </div>
+
+                        <div class="row">
+                            <blockquote>金融负债和权益工具的区分</blockquote>
+                            <table class="bordered">
+                                <thead>
+                                    <tr><th style="width:50%">金融负债</th><th>权益工具</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>向其他单位<b>交付现金或其他金融资产</b>的合同义务</td>
+                                        <td><b style="color:Tomato">没有</b>向其他单位交付现金或其他金融资产的合同义务</td>
+                                    </tr>
+                                    <tr>
+                                        <td>在<b>潜在不利条件</b>下，与其他单位交换金融资产或金融负债的合同义务</td>
+                                        <td><b style="color:Tomato">没有</b>在潜在不利条件下与其他单位交换金融资产或金融负债的合同义务</td>
+                                    </tr>
+                                    <tr>
+                                        <td>用企业自身权益工具进行结算的非衍生工具的合同义务，企业根据该合同将交付<b>非固定数量</b>发行方的自身权益工具</td>
+                                        <td>非衍生工具：（优先股）固定数量的权益工具进行结算</td>
+                                    </tr>
+                                    <tr>
+                                        <td>企业以<b>固定金额</b>的现金或其他金融资产换取<b>固定数量</b>的自身权益工具的衍生工具合同义务<b>除外</b></td>
+                                        <td>衍生工具：金额固定（有收款问题所以要固定资金金额），股数固定</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><b style="color:Tomato">重点：不付现金，或以固定资产换固定自身权益工具的是权益工具</b></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h5>第二节 负债</h5>
+                        <div class="row line"></div>
+                    </div>
+                    <div class="row">
+                        <h5>第三节 所有者权益</h5>
+                        <div class="row line"></div>
                     </div>
                 </div>
 
