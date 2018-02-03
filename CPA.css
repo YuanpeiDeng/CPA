@@ -26,7 +26,7 @@
 .fiftyPercent{
     width:50%;
 }
-.centered{
+.centered > th{
     text-align: center;
 }
 /*end*/

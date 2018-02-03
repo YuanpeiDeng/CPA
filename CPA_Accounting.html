@@ -1289,12 +1289,12 @@ $(document).ready(function(){
                         <!-- 职工薪酬 -->
                         <div class="row">
                             <blockquote><b>职工薪酬</b></blockquote>
-                            <div class="col m6">
-                                <p><b>非货币性福利</b></p>
+                            <div class="row">
+                                <p><b>短期薪酬——非货币性福利</b></p>
                                 <p>应当按照<b class="Tomato">公允价值</b>计量。公允价值不能可靠取得的，可以采用成本计量</p>
                                 <table class="bordered highlight">
                                     <thead>
-                                        <tr><th class="fiftyPercent centered" >自产产品</th><th class="centered">外购商品</th><tr>
+                                        <tr class="centered"><th>自产产品</th><th>外购商品</th><th>房屋资产</th><th>支付了补贴的商品或服务</th><tr>
                                     </thead>
                                     <tbody>
                                         <tr>
@@ -1307,9 +1307,9 @@ $(document).ready(function(){
                                                 &emsp;贷：应付职工薪酬——非货币性福利<br>
                                                 2）将自产产品实际发放时<br>
                                                 借：应付职工薪酬——非货币性福利<br>
-                                                &emsp;贷：<b>主营业务收入</b><br>
+                                                &emsp;贷：<b class="Tomato">主营业务收入</b><br>
                                                 &emsp;&emsp;&emsp;应交税费——应交增值税（销项税额）<br>
-                                                借：<b>主营业务成本</b><br>
+                                                借：<b class="Tomato">主营业务成本</b><br>
                                                 &emsp;贷：库存商品
                                             </td>
                                             <td>
@@ -1327,6 +1327,34 @@ $(document).ready(function(){
                                                 借：应付职工薪酬——非货币性福利<br>
                                                 &emsp;贷：库存商品等<br>
                                                 &emsp;&emsp;&emsp;<b class="Tomato">应交税费——应交增值税（进项税额转出）</b>
+                                            </td>
+                                            <td>
+                                                1）企业<b>拥有</b>的房屋等资产<br>
+                                                借：管理费用等<br>
+                                                &emsp;贷：应付职工薪酬——非货币性福利<br>
+                                                借：应付职工薪酬——非货币性福利<br>
+                                                &emsp;贷：<b class="Tomato">累计折旧</b><br>
+                                                2）<b>租赁</b>住房等资产<br>
+                                                借：管理费用等<br>
+                                                &emsp;贷：应付职工薪酬——非货币性福利<br>
+                                                借：应付职工薪酬——非货币性福利<br>
+                                                &emsp;贷：<b class="Tomato">其他应付款</b><br>
+                                            </td>
+                                            <td>
+                                                规定服务年限：<br>
+                                                1）购入住房时<br>
+                                                借：固定资产<br>
+                                                &emsp;贷：银行存款<br>
+                                                2）出售住房时<br>
+                                                借：银行存款<br>
+                                                &emsp;&emsp;<b class="Tomato">长期待摊费用</b><br>
+                                                &emsp;贷：固定资产<br>
+                                                3）摊销长期待摊费用时<br>
+                                                借：管理费用等<br>
+                                                &emsp;贷：应付职工薪酬——非货币性福利<br>
+                                                借：应付职工薪酬——非货币性福利<br>
+                                                &emsp;贷：<b class="Tomato">长期待摊费用</b><br>
+                                                <p>未规定服务年限的记入资产成本或当期损益</p>
                                             </td>
                                         </tr>
                                     </tbody>
