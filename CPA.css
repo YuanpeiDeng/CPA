@@ -23,6 +23,12 @@
 .Tomato{
     color:Tomato;
 }
+.fiftyPercent{
+    width:50%;
+}
+.centered{
+    text-align: center;
+}
 /*end*/
 /*会计基础*/
 .kemu > thead{

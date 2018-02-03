@@ -212,7 +212,7 @@ $(document).ready(function(){
                                         <tr><td>其他应付款</td></tr>
                                         <tr><td>长期借款</td></tr>
                                         <tr><td>预计负债</td></tr>
-                                        <tr><td>应付债券</td></tr>
+                                        <tr><td><a class="modal-trigger" href="#Bond Payable">应付债券</a></td></tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -307,7 +307,7 @@ $(document).ready(function(){
                             </div>
                         </div>
 
-                        <!-- 应付职工薪酬 -->
+                        <!-- 应付账款 -->
                         <div id="Accounts Payable" class="modal modal-fixed-footer">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -315,6 +315,50 @@ $(document).ready(function(){
                                 </div>
                                 <div class="row" style="text-align:center">
                                     <img src="img/chapter0_应付or预付账款.jpg"></img>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                            </div>
+                        </div>
+
+                        <!-- 应付债券 -->
+                        <div id="Bond Payable" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4>应付债券</h4>
+                                </div>
+                                <p>这里是一般公司债券，可转换公司债券在<a href="#Chapter10">第十章 负债和所有者权益</a></p>
+                                <div class="row">
+                                    <div class="col m6">
+                                        <blockquote>1.发行债券</blockquote>
+                                        <p>
+                                            借：银行存款<br>
+                                            &emsp;贷：应付债券——面值（债券面值）<br>
+                                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——利息调整（差额）
+                                        </p>
+                                        <p>发行债券的发行费用应计入发行债券的初始成本，反映在“应付债券——利息调整”明细科目中。（发行费用是减少负债）</p>
+                                    </div>
+                                    <div class="col m6">
+                                        <blockquote>2.期末计提利息</blockquote>
+                                        <p>每期计入“在建工程”、“制造费用”、“财务费用”等科目的利息费用=期初摊余成本×实际利率</p>
+                                        <p>每期确认的“应付利息”或“应付债券——应计利息”=债券面值×票面利率。</p>
+                                        <p>
+                                            借：在建工程、制造费用、财务费用等科目<br>
+                                            &emsp;&emsp;应付债券——利息调整<br>
+                                            &emsp;贷：应付利息（分期付息债券利息）<br>
+                                            &emsp;&emsp;&emsp;应付债券——应计利息（到期一次还本付息债券利息）
+                                        </p>
+                                    </div>
+                                    <div class="col m6">
+                                        <blockquote>3.到期归还本金和利息</blockquote>
+                                        <p>
+                                            借：应付债券——面值<br>
+                                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——应计利息（到期一次还本付息债券利息）<br>
+                                            &emsp;&emsp;应付利息（分期付息债券的最后一次利息）<br>
+                                            &emsp;贷：银行存款
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -1168,7 +1212,7 @@ $(document).ready(function(){
                     <div class="row chapterTitle">
                         <h3>第十章 负债和所有者权益</h3>
                     </div>
-                    <!-- 金融负债和权益工具的区分 -->
+                    <!-- 第一节 金融负债和权益工具的区分 -->
                     <div class="row">
                         <h5>第一节 金融负债和权益工具的区分</h5>
                         <div class="row line"></div>
@@ -1208,10 +1252,93 @@ $(document).ready(function(){
                             <p><b style="color:Tomato">重点：不付现金，或以固定资产换固定自身权益工具的是权益工具</b></p>
                         </div>
                     </div>
+
+                    <!-- 第二节 负债 -->
                     <div class="row">
                         <h5>第二节 负债</h5>
                         <div class="row line"></div>
+                        <!-- 可转换公司债券 -->
+                        <div class="row">
+                            <blockquote><b>可转换公司债券</b></blockquote>
+                            <div class="col m6">
+                                <p><b>（1）发行可转换公司债券时：</b></p>
+                                <p>
+                                    借：银行存款<br>
+                                    &emsp;贷：应付债券——可转换公司债券（面值）<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——可转换公司债券（利息调整）（也可能在借方）<br>
+                                    &emsp;&emsp;&emsp;其他权益工具（权益成份的公允价值）
+                                </p>
+                                <img src="img/chapter10_可转换公司债券1.jpg"></img>
+                                <img src="img/chapter10_可转换公司债券2.jpg"></img>
+                            </div>
+                            <div class="col m6">
+                                <p><b>（2）转换股份前：</b></p>
+                                <p>可转换公司债券的负债成份，在转换为股份前，其会计处理与一般公司债券相同，即按照实际利率和摊余成本确认利息费用，按面值和票面利率确认应付利息，差额作为利息调整进行摊销。</p>
+                            </div>
+                            <div class="col m6">
+                                <p><b>（3）转换股份时：</b></p>
+                                <p>
+                                    借：应付债券——可转换公司债券（面值、利息调整）（账面余额）<br>
+                                    &emsp;&emsp;其他权益工具（转换部分权益成分的公允价值）<br>
+                                    &emsp;贷：股本（股票面值×转换的股数）<br>
+                                    &emsp;&emsp;&emsp;资本公积——股本溢价（差额）
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 职工薪酬 -->
+                        <div class="row">
+                            <blockquote><b>职工薪酬</b></blockquote>
+                            <div class="col m6">
+                                <p><b>非货币性福利</b></p>
+                                <p>应当按照<b class="Tomato">公允价值</b>计量。公允价值不能可靠取得的，可以采用成本计量</p>
+                                <table class="bordered highlight">
+                                    <thead>
+                                        <tr><th class="fiftyPercent centered" >自产产品</th><th class="centered">外购商品</th><tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                1）决定发放非货币性福利<br>
+                                                借：生产成本<br>
+                                                &emsp;&emsp;管理费用<br>
+                                                &emsp;&emsp;在建工程<br>
+                                                &emsp;&emsp;研发支出等<br>
+                                                &emsp;贷：应付职工薪酬——非货币性福利<br>
+                                                2）将自产产品实际发放时<br>
+                                                借：应付职工薪酬——非货币性福利<br>
+                                                &emsp;贷：<b>主营业务收入</b><br>
+                                                &emsp;&emsp;&emsp;应交税费——应交增值税（销项税额）<br>
+                                                借：<b>主营业务成本</b><br>
+                                                &emsp;贷：库存商品
+                                            </td>
+                                            <td>
+                                                1）购入时<br>
+                                                借：库存商品等<br>
+                                                &emsp;&emsp;应交税费——应交增值税（进项税额）<br>
+                                                &emsp;贷：银行存款<br>
+                                                2）决定发放非货币性福利时<br>
+                                                借：生产成本<br>
+                                                &emsp;&emsp;管理费用<br>
+                                                &emsp;&emsp;在建工程<br>
+                                                &emsp;&emsp;研发支出等<br>
+                                                &emsp;贷：应付职工薪酬——非货币性福利<br>
+                                                3）将外购商品实际发放时<br>
+                                                借：应付职工薪酬——非货币性福利<br>
+                                                &emsp;贷：库存商品等<br>
+                                                &emsp;&emsp;&emsp;<b class="Tomato">应交税费——应交增值税（进项税额转出）</b>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col m6">
+
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- 第三节 所有者权益 -->
                     <div class="row">
                         <h5>第三节 所有者权益</h5>
                         <div class="row line"></div>
