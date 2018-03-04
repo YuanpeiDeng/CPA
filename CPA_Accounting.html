@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Compiled and minified CSS -->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="CPA.css"/>
+    <link type="text/css" rel="stylesheet" href="css/CPA.css"/>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -12,7 +12,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 
     <title>CPA Accounting</title>
 </head>
@@ -1384,6 +1384,9 @@ $(document).ready(function(){
                                 <p class="centered"><b>权益结算</b></p>
                                 <p>以股份（如限制性股票）或其他权益工具（如股票期权）作为对价进行结算的交易</p>
                                 <p class="Tomato">应按授予日权益工具的公允价值计量，不确认其后续公允价值变动</p>
+                                <p>企业应在等待期内的每个资产负债表日，以对可行权权益工具数量的最佳估计数为基础，
+                                    按照权益工具在授予日的公允价值，将当期取得的服务计入相关资产成本或当期费用，同时计入资本公积中的其他资本公积。</p>
+                                <p>授予日不做处理，但处理时按照授予日公允价值计量</p>
                             </div>
                             <div class="col m6">
                                 <p class="centered"><b>现金结算</b></p>
@@ -1396,6 +1399,67 @@ $(document).ready(function(){
                     <div class="row">
                         <h5>第三节 所有者权益</h5>
                         <div class="row line"></div>
+                        <!-- 其他综合收益 -->
+                        <div class="row">
+                            <blockquote><b>其他综合收益</b></blockquote>
+                            <p>主要包括：</p>
+                            <div class="col m6">
+                                <p>1.以后会计期间<b>不能重分类</b>进损益的其他综合收益项目</p>
+                                <p>
+                                    重新计量设定受益计划净负债或净资产导致的变动<br>
+                                    按照权益法核算因被投资单位重新计量设定受益计划净负债或净资产变动导致的权益变动<br>
+                                    投资企业按持股比例计算确认的该部分其他综合收益项目。
+                                </p>
+                            </div>
+
+                            <div class="col m6">
+                                <p>2.以后会计期间满足规定条件时将重分类进损益的其他综合收益项目</p>
+                                <p>
+                                    <blockquote>可供出售金融资产公允价值的变动</blockquote>
+                                    借：可供出售金融资产——公允价值变动<br>
+                                    &emsp;贷：其他综合收益
+                                </p>
+                                <p>
+                                    <blockquote>可供出售外币非货币性项目的汇兑差额</blockquote>
+                                    借：可供出售金融资产<br>
+                                    &emsp;贷：其他综合收益
+                                </p>
+                                <p>
+                                    <blockquote><b>金融资产的重分类</b></blockquote>
+                                    将持有至到期投资重分类为可供出售金融资产，并以公允价值进行后续计量<br>
+                                    借：可供出售金融资产（金融资产的公允价值）<br>
+                                    &emsp;&emsp;持有至到期投资减值准备<br>
+                                    &emsp;贷：持有至到期投资<br>
+                                    &emsp;&emsp;&emsp;其他综合收益（差额，或借方）<br>
+                                    产生的“其他综合收益”在该可供出售金融资产发生减值或终止确认时转入当期损益。
+                                </p>
+                                <p>
+                                    <blockquote>采用权益法核算的长期股权投资</blockquote>
+                                    ①被投资单位其他综合收益变动，投资方按持股比例计算应享有的份额<br>
+                                    借：长期股权投资——其他综合收益<br>
+                                    &emsp;贷：其他综合收益<br>
+                                    ②处置采用权益法核算的长期股权投资时<br>
+                                    借：其他综合收益<br>
+                                    &emsp;贷：投资收益
+                                </p>
+                                <p>
+                                    <blockquote>存货或自用房地产转换为投资性房地产</blockquote>
+                                    ①存货/自用房转为投资性房地产，其公允价值大于账面价值的<br>
+                                    借：投资性房地产——成本（转换日的公允价值）<br>
+                                    &emsp;&emsp;/累计折旧<br>
+                                    &emsp;&emsp;/固定资产减值准备<br>
+                                    &emsp;贷：开发产品/固定资产<br>
+                                    &emsp;&emsp;&emsp;其他综合收益（差额）<br>
+                                    ②处置该项投资性房地产时，因转换计入其他综合收益的金额应转入当期其他业务成本<br>
+                                    借：其他综合收益<br>
+                                    &emsp;贷：其他业务成本
+                                </p>
+                                <p>
+                                    <blockquote>现金流量套期工具产生的利得或损失中属于有效套期的部分</blockquote>
+                                    直接确认为其他综合收益。
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
