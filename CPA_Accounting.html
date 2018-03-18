@@ -12,7 +12,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 
     <title>CPA Accounting</title>
 </head>
@@ -415,9 +415,25 @@ $(document).ready(function(){
                                 <table class="bordered highlight kemu">
                                     <tbody>
                                         <tr><td>其他综合收益</td></tr>
-                                        <tr><td>资本公积</td></tr>
+                                        <tr><td><a class="modal-trigger" href="#Capital Reserves">资本公积</a></td></tr>
                                     </tbody>
                                 </table>
+                            </div>
+                        </div>
+
+                        <!-- 所有者权益类 Modal-->
+                        <!-- 资本公积 -->
+                        <div id="Capital Reserves" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4>资本公积</h4>
+                                </div>
+                                <p>企业接受控股股东（或控股股东的子公司）或非控股股东（或非控股股东的子公司）直接或间接代为偿债，
+                                    债务豁免或捐赠，经济实质表明属于控股股东或非控股股东对企业的资本性投入，
+                                    应当将相关的利得计入所有者权益（资本公积）。</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
                             </div>
                         </div>
 
@@ -1495,10 +1511,67 @@ $(document).ready(function(){
                     </div>
                 </div>
 
-                <!-- 12.金融资产 -->
+                <!-- 12.非货币性资产交换 -->
                 <div class="row chapter section scrollspy" id="Chapter12">
                     <div class="row chapterTitle">
                         <h3>第十二章 非货币性资产交换</h3>
+                    </div>
+                </div>
+
+                <!-- 13.债务重组 -->
+                <div class="row chapter section scrollspy" id="Chapter13">
+                    <div class="row chapterTitle">
+                        <h3>第十三章 债务重组</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+                            <blockquote>会计处理</blockquote>
+                            <p>
+                                债权人的会计处理<br>
+                                借：银行存款<br>
+                                &emsp;&emsp;坏账准备<br>
+                                &emsp;&emsp;<b class="Tomato">营业外支出（借方差额）</b><br>
+                                &emsp;贷：应收账款等<br>
+                                &emsp;&emsp;&emsp;<b class="Tomato">资产减值损失（贷方差额）</b><br>
+                                【提示】贷方差额冲减资产减值损失的原因是前期多提了坏账准备。（借：资产减值损失；贷：坏账准备）
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14.所得税 -->
+                <div class="row chapter section scrollspy" id="Chapter14">
+                    <div class="row chapterTitle">
+                        <h3>第十四章 所得税</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+                            <blockquote>基础知识</blockquote>
+                            <p>递延只看未来调增还是调减</p>
+                            <table>
+                                <tbody>
+                                    <tr><td></td><td>可抵扣</td><td>应纳税</td></tr>
+                                    <tr><td>资产</td><td>账面 < 计税</td><td>账面 > 计税</td></tr>
+                                    <tr><td>负债</td><td>账面 > 计税</td><td>账面 < 计税</td></tr>
+                                </tbody>
+                            </table>
+                            <p><b>负债</b>账面价值 > 计税基础，产生可抵扣差异，未来纳税调减，确认递延所得税资产</p>
+                            <p><b>资产</b>账面价值 < 计税基础，产生可抵扣差异，未来纳税调减，确认递延所得税资产</p>
+                        </div>
+                        <div class="col m6">
+                            <blockquote>图例</blockquote>
+                            <img src="img/chapter14_所得税小结1.jpg"></img>
+                            <img src="img/chapter14_所得税小结2.jpg"></img>
+                        </div>
+                        <div class="col m6">
+                            <blockquote>应纳税所得额</blockquote>
+                            <p>应纳税暂时性差异：转回时纳税调增，所以发生时纳税调减</p>
+                            <p>可抵扣暂时性差异：转回时纳税调减，所以发生时纳税调增</p>
+                            <p>
+                                应纳税所得额 = 税前会计利润 <b class="Tomato">+
+                                本期发生的影响损益的可抵扣暂时性差异</b> - 本期转回的影响损益的可抵扣暂时性差异
+                                <b class="Tomato">- 本期发生的影响损益的应纳税暂时性差异</b>+本期转回的影响损益的应纳税暂时性差异</p>
+                        </div>
                     </div>
                 </div>
 
