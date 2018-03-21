@@ -1570,7 +1570,131 @@ $(document).ready(function(){
                             <p>
                                 应纳税所得额 = 税前会计利润 <b class="Tomato">+
                                 本期发生的影响损益的可抵扣暂时性差异</b> - 本期转回的影响损益的可抵扣暂时性差异
-                                <b class="Tomato">- 本期发生的影响损益的应纳税暂时性差异</b>+本期转回的影响损益的应纳税暂时性差异</p>
+                                <b class="Tomato">- 本期发生的影响损益的应纳税暂时性差异</b>+本期转回的影响损益的应纳税暂时性差异
+                            </p>
+                            <p>当期所得税<br>= （应税收入–可抵扣成本费用）×适用税率<br>= （出售收入-出售成本+租金收入-费用-折旧）× 25%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15.外币折算 -->
+                <div class="row chapter section scrollspy" id="Chapter15">
+                    <div class="row chapterTitle">
+                        <h3>第十五章 外币折算</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+                            <blockquote>汇兑差额</blockquote>
+                            <p>
+                                外币<b>资产</b>汇兑损失=调整前记账本位币余额-期末记账本位币余额（期末外币余额×期末即期汇率）<br>
+                                外币<b>负债</b>汇兑损失=期末记账本位币余额（期末外币余额×期末即期汇率）-调整前记账本位币余额
+                            </p>
+                        </div>
+                        <div class="col m6">
+                            <blockquote>现时汇率法</blockquote>
+                            <table>
+                                <tbody>
+                                    <tr><td>资产&负债</td><td>现时汇率</td></tr>
+                                    <tr><td>实收资本</td><td>历史汇率</td></tr>
+                                    <tr><td>所有者权益</td><td>发生时即期汇率</td></tr>
+                                    <tr><td>利润表各项目</td><td>当期平均汇率</td></tr>
+                                    <tr><td>未分配利润</td><td>全年平均汇率</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 16.租赁 -->
+                <div class="row chapter section scrollspy" id="Chapter16">
+                    <div class="row chapterTitle">
+                        <h3>第十六章 租赁</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+                            <blockquote>承租人会计处理</blockquote>
+                            <table>
+                                <thead>
+                                    <tr><th style="width:40%">经营租赁</th><th>融资租赁</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            确认各期费用<br>
+                                            借：管理费用<br>
+                                            &emsp;贷：其他应付款
+                                        </td>
+                                        <td>
+                                            租赁期开始日<br>
+                                            借：固定资产/在建工程（公允价值与最低租赁付款额<b>现值</b>两者中较低者<b>+初始直接费用</b>）<br>
+                                            &emsp;&emsp;未确认融资费用<br>
+                                            &emsp;贷：长期应付款（最低租赁付款额）<br>
+                                            &emsp;&emsp;&emsp;银行存款（初始直接费用）
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            预付租金<br>
+                                            借：长期待摊费用<br>
+                                            &emsp;贷：银行存款
+                                        </td>
+                                        <td>
+                                            未确认融资费用的分摊<br>
+                                            借：财务费用（不满足资本化条件）<br>
+                                            &emsp;&emsp;在建工程等（满足资本化条件时）<br>
+                                            &emsp;贷：未确认融资费用<br>
+                                            <b>每期未确认融资费用摊销额<br>= 期初应付本金余额×实际利率<br>= (期初长期应付款余额-期初未确认融资费用余额)×实际利率</b><br>
+                                            <b class="Tomato">以公允价值入账的分摊率要重新计算，应为租赁付款额现值=公允价值的折现率</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            实际支付<br>
+                                            借：其他应付款<br>
+                                            &emsp;贷：银行存款or长期待摊费用
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            初始直接费用<br>
+                                            借：管理费用<br>
+                                            &emsp;贷：银行存款
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            或有租金<br>
+                                            借：销售费用<br>
+                                            &emsp;贷：银行存款
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col m6">
+                            <blockquote>出租人会计处理</blockquote>
+                            <p><b>融资租赁</b></p>
+                            <p>
+                                一。租赁债权的确认<br>
+                                借：长期应收款——应收融资租赁款（最低租赁收款额）<br>
+                                &emsp;&emsp;未担保余值<br>
+                                &emsp;&emsp;营业外支出（租赁资产公允价值小于账面价值）<br>
+                                &emsp;贷：融资租赁资产（租赁资产原<b class="Tomato">账面价值</b>）<br>
+                                &emsp;&emsp;&emsp;银行存款（初始直接费用）<br>
+                                &emsp;&emsp;&emsp;营业外收入（租赁资产公允价值大于原账面价值）<br>
+                                &emsp;&emsp;&emsp;未实现融资收益（= 最低租赁收款额+未担保余值-(资产<b class="Tomato">公允价值</b>+初始直接费用)）
+                            </p>
+                            <p><b>未实现融资收益</b></p>
+                            <p>
+                                借：银行存款<br>
+                                &emsp;贷：长期应收款——应收融资租赁款<br>
+                                借：未实现融资收益<br>
+                                &emsp;贷：租赁收入
+                            </p>
                         </div>
                     </div>
                 </div>
