@@ -938,27 +938,313 @@ $(document).ready(function(){
                     <div class="row chapterTitle">
                         <h3>第八章 长期股权投资与企业合并</h3>
                     </div>
+                    <div class="row">
                     <h5>一、基本概念</h5>
-                    <div class="row">
-                        <blockquote>联营企业</blockquote>
-                        <p>1.在董事会或类似权力机构中派有代表。</p>
-                        <p>2.参与被投资单位财务和经营政策制定过程。</p>
-                        <p>3.与被投资单位之间发生重要交易。</p>
-                        <p>4.向被投资单位派出管理人员。</p>
-                        <p>5.向被投资单位提供关键技术资料。</p>
+                        <div class="col m6">
+                            <blockquote>联营企业</blockquote>
+                            <b class="Tomato">关键：重大影响</b>
+                            <p>1.在董事会或类似权力机构中派有代表。</p>
+                            <p>2.参与被投资单位财务和经营政策制定过程。</p>
+                            <p>3.与被投资单位之间发生重要交易。</p>
+                            <p>4.向被投资单位派出管理人员。</p>
+                            <p>5.向被投资单位提供关键技术资料。</p>
+                        </div>
+                        <div class="col m6">
+                            <blockquote>合营企业</blockquote>
+                            <p>1.各参与方均受到合营安排的约束。</p>
+                            <p>2.两个或以上参与方对该安排实施<b>共同控制（唯一组合）</b>。</p>
+                            <p>3.任何一个参与方不能单独控制该安排。</p>
+                        </div>
+                        <div class="col m6">
+                            <blockquote>合营安排的分类</blockquote>
+                            <p>共同经营：享有资产，承担负债</p>
+                            <p>合营企业：只享有净资产</p>
+                            <img src="img/chapter8_合营安排分类.jpg"></img>
+                        </div>
                     </div>
+
                     <div class="row">
-                        <blockquote>合营企业</blockquote>
-                        <p>1.各参与方均受到合营安排的约束。</p>
-                        <p>2.两个或以上参与方对该安排实施<b>共同控制</b>。</p>
-                        <p>3.任何一个参与方不能单独控制该安排。</p>
+                        <h5>二、长期股权投资的确认与初始计量</h5>
+                        <div class="col m6">
+                            <blockquote><b>权益结合法</b></blockquote>
+                            <p>适用于<b>同一控制</b>下企业合并，以前会计基础保持<b>不变</b>，资产和负债继续按其原来的<b>账面价值</b>记录。</p>
+                            <p>1.合并方以支付现金、转让非现金资产或承担债务方式作为合并对价</p>
+                            <p>
+                                借：长期股权投资（被合并方所有者权益在<b class="Tomato">最终控制方合并财务报表中的账面价值的份额</b>+包括最终控制方收购被合并方而形成的商誉）<br>
+                                &emsp;贷：负债（承担债务账面价值）<br>
+                                &emsp;&emsp;&emsp;资产（投出资产账面价值）<br>
+                                &emsp;&emsp;&emsp;资本公积——资本溢价或股本溢价（差额，可能在借方）<br>
+                                借：<b class="Tomato">管理费用</b>（审计、法律服务等相关费用）<br>
+                                &emsp;贷：银行存款
+                            </p>
+                            <p>2.合并方以发行权益性证券作为合并对价</p>
+                            <p>
+                                借：长期股权投资（被合并方所有者权益在最终控制方合并财务报表中的账面价值的份额+包括最终控制方收购被合并方而形成的商誉）<br>
+                                &emsp;贷：股本（发行股票的数量×每股面值）<br>
+                                &emsp;&emsp;&emsp;资本公积——股本溢价（差额 = 长期股权投资-股本）<br>
+                                借：资本公积——股本溢价（权益性证券发行费用）<br>
+                                &emsp;贷：银行存款
+                            </p>
+                        </div>
+                        <div class="col m6">
+                            <blockquote><b>购买法</b></blockquote>
+                            <p>
+                                1.一次交易实现的企业合并<br>
+                                以购买方支付的现金/非现金资产、发行或承担的债务、发行的权益性证券等在购买日的公允价值作为长期股权投资的初始投资成本
+                            </p>
+
+                            <p>
+                                2.企业通过多次交换交易分步实现非同一控制下控股合并<br>
+                                ①原投资为<b class="Tomato">长期股权投资</b><br>
+                                购买日长期股权投资初始投资成本 = 原投资<b class="Tomato">账面价值</b> + 新增股份公允价值。<br>
+                                ②原投资为<b class="Tomato">可供出售金融资产或交易性金融资产</b><br>
+                                购买日长期股权投资初始投资成本 = 原投资<b class="Tomato">公允价值</b> + 新增股份公允价值<br>
+                                【提示】项目不变的话与历史成本有关，用账面价值；项目变了的话视同出售。
+                            </p>
+                            <p>
+                                3.或有对价<br>
+                                借：以公允价值计量且其变动计入当期损益的金融资产<br>
+                                &emsp;贷：公允价值变动损益
+                            </p>
+                        </div>
                     </div>
-                    <h5>二、长期股权投资的确认与初始计量</h5>
+
                     <div class="row">
-                        <blockquote>权益法：投资单位对被投资单位能够实施<b>共同控制或重大影响</b></blockquote>
-                        <blockquote>成本法：投资单位能够对被投资单位<b>实施控制</b></blockquote>
+                        <!-- 直接从东奥复制下来的，不想自己写了 -->
+                        <blockquote>投资相关交易费用的处理</blockquote>
+                        <table>
+                            <tbody>
+                                <tbody>
+                                    <tr style="height:14.2pt">
+                                        <td width="30%" colspan="2" style="width:30.68%;border:solid black 1.0pt;      padding:2.7pt 7.2pt 2.7pt 7.2pt;height:14.2pt">
+                                            <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center">
+                                                <span style="font-family:宋体;      ">项目</span>
+                                            </p>
+                                        </td>
+                                        <td width="19%" style="width:19.98%;border:solid black 1.0pt;border-left:      none;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">
+                                            <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center">
+                                                <span style="font-family:宋体;      ">直接相关的费用、税金</span>
+                                            </p>
+                                        </td>
+                                        <td width="23%" style="width:23.64%;border:solid black 1.0pt;border-left:      none;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">
+                                            <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center">
+                                                <span style="font-family:宋体;      ">发行权益性证券支付的手续费、佣金等</span>
+                                            </p>
+                                        </td>
+                                        <td width="25%" style="width:25.7%;border:solid black 1.0pt;border-left:none;      padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">
+                                            <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center">
+                                                <span style="font-family:宋体;      ">发行债务性证券支付的手续费、佣金等</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height:14.2pt">
+                                        <td width="8%" rowspan="3" style="width:8.78%;border:solid black 1.0pt;      border-top:none;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">
+                                            <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center">
+                                                <span style="font-family:宋体;      ">长期股权投资</span>
+                                            </p>
+                                        </td>
+                                        <td width="21%" style="width:21.9%;border-top:none;border-left:none;      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">
+                                            <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center">
+                                                <span style="font-family:宋体;      ">同一控制</span>
+                                            </p>
+                                        </td>
+                                        <td width="19%" style="width:19.98%;border-top:none;border-left:none;      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">
+                                            <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center">
+                                                <span style="font-family:宋体;      ">计入管理费用</span>
+                                            </p>
+                                        </td>
+                                        <td width="23%" rowspan="6" style="width:23.64%;border-top:none;border-left:      none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;      padding:2.7pt 7.2pt 2.7pt 7.2pt;height:14.2pt">      <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif'"><span style="font-family:宋体;      ">应自权益性证券的溢价发行收入中扣除，溢价收入不足冲减的，应冲减盈余公积和未分配利润</span></p>
+                                        </td>
+                                        <td width="25%" rowspan="6" style="width:25.7%;border-top:none;border-left:      none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;      padding:2.7pt 7.2pt 2.7pt 7.2pt;height:14.2pt">      <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif'"><span style="font-family:宋体;      ">计入应付债券初始确认金额（其中债券若为折价发行，该部分费用增加折价的金额；若为溢价发行应减少溢价的金额）</span></p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height:14.2pt">
+                                        <td width="21%" style="width:21.9%;border-top:none;border-left:none;      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">
+                                            <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center">
+                                                <span style="font-family:宋体;      ">非同一控制</span>
+                                            </p>
+                                        </td>
+                                        <td width="19%" style="width:19.98%;border-top:none;border-left:none;      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">
+                                            <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center">
+                                                <span style="font-family:宋体;      ">计入管理费用</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height:14.2pt">
+                                            <td width="21%" style="width:21.9%;border-top:none;border-left:none;      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">      <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center"><span style="font-family:宋体;      ">不形成控股合并</span></p>      </td>      <td width="19%" style="width:19.98%;border-top:none;border-left:none;      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">      <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center"><span style="font-family:宋体;      ">计入成本</span></p>      </td>    </tr>    <tr style="height:14.2pt">      <td width="30%" colspan="2" style="width:30.68%;border:solid black 1.0pt;      border-top:none;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">      <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center"><span style="font-family:宋体;      ">交易性金融资产</span></p>      </td>      <td width="19%" style="width:19.98%;border-top:none;border-left:none;      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">      <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center"><span style="font-family:宋体;      ">计入投资收益</span></p>      </td>    </tr>    <tr style="height:14.2pt">      <td width="30%" colspan="2" style="width:30.68%;border:solid black 1.0pt;      border-top:none;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">      <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center"><span style="font-family:宋体;      ">持有至到期投资</span></p>      </td>      <td width="19%" style="width:19.98%;border-top:none;border-left:none;      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">      <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center"><span style="font-family:宋体;      ">计入成本</span></p>      </td>    </tr>    <tr style="height:14.2pt">      <td width="30%" colspan="2" style="width:30.68%;border:solid black 1.0pt;      border-top:none;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">      <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center"><span style="font-family:宋体;      ">可供出售金融资产</span></p>      </td>      <td width="19%" style="width:19.98%;border-top:none;border-left:none;      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.7pt 7.2pt 2.7pt 7.2pt;      height:14.2pt">      <p style="margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:'Calibri','sans-serif';text-align:center" align="center"><span style="font-family:宋体;      ">计入成本</span></p>      </td>    </tr>  </tbody>
+                            </tbody>
+                        </table>
+                        <!-- <p>权益法：：投资单位对被投资单位能够实施<b>共同控制或重大影响</b></p>
+                        <p>成本法：：投资单位能够对被投资单位<b>实施控制</b></p>
                         <p>也可以这样理解：成本法是用来核算自己家的东西，权益法用来核算不是自己家但是和自己有关联的东西。</p>
-                        <blockquote>企业合并以外的方式取得长期股权投资，发生的直接费用记入投资成本；支付券商佣金冲减资本公积</blockquote>
+                        <p>企业合并以外的方式取得长期股权投资，发生的直接费用记入投资成本；支付券商佣金冲减资本公积</p> -->
+                    </div>
+
+                    <div class="row">
+                        <blockquote>反向购买的处理</blockquote>
+                        <p>站在购买方角度看报表，p.135，<a href="http://course.dongao.com/lecture/10050">东奥链接</a></p>
+                        <table class="bordered">
+                            <tbody>
+                                <tr><td style="width:30%">项目</td><td>合并金额</td></tr>
+                                <tr><td>流动资产</td><td>被购买方在购买日公允价值 + 购买方账面价值</td></tr>
+                                <tr><td>非流动资产</td><td>被购买方在购买日公允价值（不含反向购买时产生的长期股权投资） + 购买方账面价值</td></tr>
+                                <tr><td>商誉</td><td>合并成本-被购买方可辨认净资产公允价值（如为负数应反映在留存收益中）</td></tr>
+                                <tr><td>资产总额</td><td>合计</td></tr>
+                                <tr><td>流动负债</td><td>被购买方在购买日公允价值 + 购买方账面价值</td></tr>
+                                <tr><td>非流动负债</td><td>被购买方在购买日公允价值 + 购买方账面价值</td></tr>
+                                <tr><td>负债总额</td><td>合计</td></tr>
+                                <tr><td>股本（A公司股票股数）</td><td>购买方合并前发行在外的股份面值×被购买方持股比例+假定购买方在确定该项企业合并成本过程中新发行的权益性工具的面值</td></tr>
+                                <tr><td>资本公积</td><td>差额</td></tr>
+                                <tr><td>盈余公积</td><td>购买方合并前盈余公积 × 被购买方持股比例</td></tr>
+                                <tr><td>未分配利润</td><td>购买方合并前未分配利润 × 被购买方持股比例</td></tr>
+                                <tr><td>少数股东权益</td><td>少数股东按持股比例计算享有购买方合并前净资产账面价值的份额</td></tr>
+                                <tr><td>所有者权益总额</td><td>资产总额-负债总额</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row">
+                        <h5>三、长期股权投资的后续计量</h5>
+                        <div class="row">
+                            <blockquote>成本法</blockquote>
+                            <p>适用范围：投资方能够对被投资单位<b class="Tomato">实施控制</b>的长期股权投资应当采用成本法核算。</p>
+                            <div class="col m6">
+                                <p>
+                                    被投资单位宣告发放现金股利<br>
+                                    借：应收股利（享有被投资单位宣告发放的现金股利或利润）<br>
+                                    &emsp;贷：投资收益
+                                </p>
+                            </div>
+                            <div class="col m6">
+                                <p>
+                                    计提减值准备<br>
+                                    借：资产减值损失<br>
+                                    &emsp;贷：长期股权投资减值准备
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <blockquote>权益法</blockquote>
+                            <div class="col m6">
+                                <p>
+                                    根据投资企业享有被投资单位所有者权益份额的变动对投资的账面价值进行调整<br>
+                                    适用范围：<b class="Tomato">共同控制</b>的合营企业；<b class="Tomato">重大影响</b>的联营企业。
+                                </p>
+                                <p>
+                                    1.科目设置：<br>
+                                    长期股权投资——投资成本（投资时点）<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——损益调整（持有期间被投资单位净损益及利润分配变动）<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——其他综合收益（投资后其他综合收益变动）<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——其他权益变动（投资后其他）<br>
+                                    【提示】<br>
+                                    1.初始投资成本 = 付出对价公允，如果小于可辨认公允资产，那叫调整后的初始投资成本。<br>
+                                    2.商誉不在个别报表中确认，只能体现在长期股权投资中。
+                                </p>
+                            </div>
+                            <div class="col m6">
+                                <p>
+                                    2.投资损益的确认<br>
+                                    实现净利润<br>
+                                    借：长期股权投资——损益调整<br>
+                                    &emsp;贷：投资收益<br>
+                                    损失作相反分录
+                                </p>
+                                <p>
+                                    3.被投资单位宣告分配现金股利或利润的处理<br>
+                                    借：应收股利<br>
+                                    &emsp;贷：<b class="Tomato">长期股权投资——损益调整</b><br>
+                                    借：银行存款<br>
+                                    &emsp;贷：应收股利
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <blockquote>核算方法的转换</blockquote>
+                            <table class="bordered">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2" style="width:33%">转换形式</td><td style="width:33%">个别报表</td><td style="width:33%">合并报表</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3">上升</td><td>1.公允价值计量转换为权益法</td><td>原投资调整到公允价值</td><td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.权益法转换为成本法</td><td>原投资<b>保持账面价值</b></td><td>原投资调整到公允价值</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.公允价值计量转换为成本法（非同一控制）</td><td>原投资调整到转换日公允价值</td><td>因个别报表原投资公允价值与账面价值相等，所以无需调整</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3">下降</td>
+                                        <td><a class="modal-trigger" href="#ChenbenToQuanyi">4.成本法转换为权益法</a></td>
+                                        <!-- Modal Structure -->
+                                        <div id="ChenbenToQuanyi" class="modal modal-fixed-footer">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4>成本法转换为权益法</h4>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col m6">
+                                                        <p>
+                                                            1.个别财务报表<br>
+                                                            关键点：剩余持股比例部分应视同取得投资时点即采用权益法核算，即对剩余持股比例投资追溯调整，将其调整到权益法核算的结果。<br>
+                                                            （1）处置部分<br>
+                                                            借：银行存款<br>
+                                                            &emsp;贷：长期股权投资<br>
+                                                            &emsp;&emsp;&emsp;投资收益（差额）<br>
+                                                            （2）剩余部分追溯调整<br>
+                                                            ①投资时点商誉的追溯<br>
+                                                            剩余的长期股权投资初始投资成本大于按照剩余持股比例计算原投资时应享有被投资单位可辨认净资产公允价值份额的,
+                                                            属于投资作价中体现的商誉部分,不调整长期股权投资的账面价值；属于初始投资成本小于原投资时应享有被投资单位可
+                                                            辨认净资产公允价值份额的,在调整长期股权投资成本的同时,应调整留存收益。<br>
+                                                            ②投资后的追溯调整<br>
+                                                            借：长期股权投资<br>
+                                                            &emsp;贷：留存收益（盈余公积、利润分配——未分配利润）（原投资时至处置投资当期期初被投资单位留存收益变动×剩余持股比例）<br>
+                                                            &emsp;&emsp;&emsp;投资收益（处置投资当期期初至处置日被投资单位的净损益变动×剩余持股比例）<br>
+                                                            &emsp;&emsp;&emsp;其他综合收益（被投资单位其他综合收益变动×剩余持股比例）<br>
+                                                            &emsp;&emsp;&emsp;资本公积——其他资本公积（其他原因导致被投资单位其他所有者权益变动×剩余持股比例）<br>
+                                                            【提示】调整留存收益和投资收益时，应自被投资方实现的净损益中扣除已发放或已宣告发放的现金股利或利润。
+                                                        </p>
+                                                    </div>
+                                                    <div class="col m6">
+                                                        <p>
+                                                            2.合并财务报表<br>
+                                                            母公司因处置部分股权投资或其他原因丧失了对原有子公司控制的，在合并财务报表中，对于剩余股权，应当按照丧失控制权日的
+                                                            公允价值进行重新计量。处置股权取得的对价和剩余股权公允价值之和，减去按原持股比例计算应享有原有子公司自购买日开始持
+                                                            续计算的净资产份额与商誉之和的差额，计入丧失控制权当期的投资收益。<br>
+                                                            <b class="Tomato">合并报表中计算投资收益应考虑正商誉的影响，不考虑负商誉的影响。</b><br>
+                                                            <b class="Tomato">合并报表计算投资收益时，应将其他综合收益（可转损益部分）和其他所有者权益变动转入投资收益。</b><br>
+                                                            关键点：因控制权发生改变（由原控制转为不再控制），在合并财务报表中剩余股权投资要重新计量，即视为将投资全部出售
+                                                            （售价与账面价值之间的差额计入投资收益），再将剩余部分投资按出售日的公允价值回购。<br>
+                                                            丧失控制权日合并财务报表中的投资收益<br>
+                                                            合并财务报表中确认的投资收益=处置股权取得的对价与剩余股权公允价值之和-按原持股比例计算应享有原有子公司自购买日开
+                                                            始持续计算的净资产份额-按原持股比例计算的商誉+与原有子公司股权投资相关的其他综合收益（可转损益的部分）、其他权益变动<br>
+                                                            丧失控制权日合并财务报表中的调整分录<br>
+                                                            ①将剩余股权投资由个别财务报表中的账面价值在合并财务报表中调整到丧失控制权日的公允价值，其调整分录为：借记“长期股权投资”科目，贷记“投资收益”科目，或作相反分录。<br>
+                                                            ②对个别财务报表中确认的投资收益的归属期间进行调整，其调整分录为：借记“投资收益”科目，贷记“盈余公积”、“未分配利润”、“其他综合收益”、“资本公积——其他资本公积”科目，或作相反分录。<br>
+                                                            ③将与原投资有关的其他综合收益（可转损益的部分）、其他所有者权益变动转入投资收益，其调整分录为：借记“其他综合收益”科目、“资本公积—其他资本公积”科目，贷记“投资收益”科目，或作相反分录。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                                            </div>
+                                        </div>
+                                        <td>剩余投资追溯调整权益法账面价值</td>
+                                        <td>剩余投资调整到公允价值</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5.权益法转换为公允价值计量</td><td>剩余投资调整到公允价值</td><td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6.成本法转换为公允价值计量</td><td>剩余投资调整到公允价值</td><td>无需调整剩余投资价值</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
@@ -1835,7 +2121,24 @@ $(document).ready(function(){
                         </div>
 
                         <div class="col m6">
-                            <!-- 原筹资活动部分位置，预留以后排版 -->
+                            <blockquote><b>调整事项属于资产负债表项目</b></blockquote>
+                            <p>
+                                净利润<br>
+                                + 资产减值准备<br>
+                                + 固定资产折旧<br>
+                                + 无形资产摊销<br>
+                                + 长期待摊费用摊销
+                                +处置固定资产、无形资产和其他长期资产的损失（收益以“-”号填列）<br>
+                                + 固定资产报废损失（收益以“-”号填列）<br>
+                                + 公允价值变动损失（收益以“-”号填列）<br>
+                                + 财务费用（收益以“-”号填列）（不含与经营活动有关的财务费用）<br>
+                                + 投资损失（收益以“-”号填列）<br>
+                                + 递延所得税<b>资产减少</b>（增加以“-”号填列）<br>
+                                + 递延所得税<b>负债增加</b>（减少以“-”号填列）（只考虑对应所得税费用部分）<br>
+                                + 存货的减少（增加以“-”号填列）（不含计入投资活动和筹资活动部分）<br>
+                                + 经营性<b>应收</b>项目的<b>减少</b>（增加以“-”号填列）（不含计入投资活动和筹资活动部分）<br>
+                                + 经营性<b>应付</b>项目的<b>增加</b>（减少以“-”号填列）（不含计入投资活动和筹资活动部分）
+                            </p>
                         </div>
 
                     </div>
