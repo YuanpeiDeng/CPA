@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Compiled and minified CSS -->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/CPA.css"/>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
 
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel = "Shortcut Icon" href=img/icon.ico>
 
     <title>CPA Accounting</title>
 </head>
@@ -1805,6 +1806,137 @@ $(document).ready(function(){
                             <p>以股份或其他权益工具<b>为基础</b>计算的<b>交付现金</b>或其他资产义务的交易</p>
                             <p class="Tomato">授予日不做处理，但每个资产负债表日按公允价值计量，变动记入公允价值变动损益</p>
                         </div>
+                    </div>
+                    <div class="row">
+                        <!-- 权益结算股份支付的处理 -->
+                        <div class="col m6">
+                            <blockquote>股份支付的处理</blockquote>
+                            <table class="bordered">
+                                <tbody>
+                                    <tr><td><b>授予日</b></td><td>除了立即可行权的股份支付外，企业在授予日均不做会计处理。</td></tr>
+                                    <tr>
+                                        <td><b>等待期内每个资产负债表日</b></td>
+                                        <td>
+                                            <p>
+                                                ①对于权益结算的涉及职工的股份支付，应当按照授予日权益工具的公允价值计入成本费用和资本公积（其他资本公积），不确认其后续公允价值变动。<br>
+                                                借：管理费用等<br>
+                                                &emsp;贷：资本公积——其他资本公积
+                                            </p>
+                                            <p>
+                                                ②对于现金结算的涉及职工的股份支付，应当按照每个资产负债表日权益工具的公允价值重新计量，确定成本费用和应付职工薪酬。<br>
+                                                借：管理费用等<br>
+                                                &emsp;贷：应付职工薪酬
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>可行权日之后</b></td>
+                                        <td>
+                                            <p>①权益结算的股份支付，<b class="Tomato">不再进行调整</b>。</p>
+                                            <p>
+                                                ②对于现金结算的股份支付，企业在可行权日之后不再确认成本费用，负债（应付职工薪酬）公允价值的变动应当计入当期损益（公允价值变动损益）。<br>
+                                                借：公允价值变动损益<br>
+                                                &emsp;贷：应付职工薪酬
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>回购股份进行职工期权激励</b></td>
+                                        <td>
+                                            <div class="row">
+                                                <p><b class="Tomato">权益结算的股份支付的会计处理</b></p>
+                                                <div class="col m6">
+                                                    <p>①回购股份<br>
+                                                    借：库存股<br>
+                                                    &emsp;贷：银行存款（实际支付的款项）<br></p>
+                                                </div>
+                                                <div class="col m6">
+                                                    <p>②确认成本费用<br>
+                                                    借：管理费用等<br>
+                                                    &emsp;贷：资本公积——其他资本公积</p>
+                                                </div>
+                                                <div class="col m12">
+                                                    <p>③职工行权<br>
+                                                    借：银行存款（企业收到的股票价款）<br>
+                                                    &emsp;&emsp;资本公积——其他资本公积（等待期内资本公积累计确认的金额）<br>
+                                                    &emsp;贷：库存股（交付给职工的库存股成本）<br>
+                                                    &emsp;&emsp;&emsp;资本公积——股本溢价（差额）</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 限制性股票的处理 -->
+                        <div class="col m6">
+                            <blockquote>限制性股票分配现金股利的会计处理</blockquote>
+                            <p><b>【关键点】</b>预计未来<b class="Tomato">可解锁</b>，现金股利通过“<b class="Tomato">利润分配</b>”科目核算；
+                                现金股利<b class="Tomato">可撤销</b>，应<b class="Tomato">减少其他应付款</b>。</b></p>
+                            <table class="bordered">
+                                <thead>
+                                    <tr><th></th><th>预计未来可解锁</th><th>预计未来不可解锁</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="width:8%">现金股利<b>可撤销</b></td>
+                                        <td style="width:46%">
+                                            <p>借：利润分配——应付现金股利或利润<br>&emsp;贷：应付股利——限制性股票股利</p>
+                                            <p>同时，按分配的现金股利金额<br>借：其他应付款——限制性股票回购义务<br>&emsp;贷：库存股</p>
+                                            <p>实际支付时<br>借：应付股利——限制性股票股利<br>&emsp;贷：银行存款</p>
+                                        </td>
+                                        <td style="width:46%">
+                                            <p>借：其他应付款——限制性股票回购义务<br>&emsp;贷：应付股利——限制性股票股利</p>
+                                            <p>实际支付时<br>借：应付股利——限制性股票股利<br>&emsp;贷：银行存款</p>
+                                            <p>后续信息表明不可解锁限制性股票的数量与以前估计不同的，应当作为会计估计变更处理，直到解锁日预计不可解锁限制性股票的数量与实际未解锁限制性股票的数量一致</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>现金股利<b>不可撤销</b></td>
+                                        <td>
+                                            <p>借：利润分配——应付现金股利或利润<br>&emsp;贷：应付股利——限制性股票股利</p>
+                                            <p>实际支付时<br>借：应付股利——限制性股票股利<br>&emsp;贷：银行存款</p>
+                                        </td>
+                                        <td>
+                                            <p>借：管理费用<br>&emsp;贷：应付股利——限制性股票股利</p>
+                                            <p>实际支付时<br>借：应付股利——限制性股票股利<br>&emsp;贷：银行存款</p>
+                                            <p>后续信息表明不可解锁限制性股票的数量与以前估计不同的，应当作为会计估计变更处理，直到解锁日预计不可解锁限制性股票的数量与实际未解锁限制性股票的数量一致</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>其他关于限制性股票的讲解在<a href="http://course.dongao.com/lecture/20185">第二十八讲</a></p>
+                        </div>
+                    </div>
+
+                    <div class="row line"></div>
+                    <div class="row">
+                        <blockquote style="margin:0.75em 0.75em">集团股份支付</blockquote>
+
+                        <div class="col m6">
+                            <p>①结算企业（母公司）以其<b>本身权益工具</b>结算，接受服务企业（子公司）没有结算义务</p>
+                            <p>1）结算企业<br>借：长期股权投资<br>&emsp;贷：资本公积——其他资本公积（按权益结算股份支付计量原则确认资本公积）</p>
+                            <p>2）接受服务企业<br>借：管理费用等<br>&emsp;贷：资本公积——其他资本公积（按权益结算股份支付计量原则确认资本公积）</p>
+                            <p>3）合并财务报表中应编制如下抵销分录<br>借：资本公积<br>&emsp;贷：长期股权投资</p>
+                            <p><b>【关键点】</b>合并财务报表中反映的是，相当于母公司授予母公司职工权益结算股份支付的结果。</p>
+                        </div>
+                        <div class="col m6">
+                            <p>②结算企业（母公司）<b>不是</b>以其本身权益工具结算，接受服务企业（子公司）没有结算义务</p>
+                            <p>1）结算企业<br>借：长期股权投资<br>&emsp;贷：应付职工薪酬（按现金结算股份支付计量原则确认应付职工薪酬）</p>
+                            <p>2）接受服务企业<br>借：管理费用等<br>&emsp;贷：资本公积——其他资本公积（按权益结算股份支付计量原则确认资本公积）</p>
+                            <p>3）合并财务报表中应编制如下抵销分录<br>借：资本公积<br>&emsp;&emsp;管理费用等（差额，也可能在贷方）<br>&emsp;贷：长期股权投资</p>
+                            <p>
+                                <b>【关键点】</b>合并财务报表中反映的是，相当于集团会计主体授予集团会计主体职工现金结算股份支付的结果，合并财务报表中最终体现的是
+                                按现金结算股份支付计量原则确认的应付职工薪酬和管理费用，因接受服务企业确认的管理费用是按权益结算股份支付计量原则确定的，所以合并财务报表抵销分录中会出现差额，该差额计入管理费用。
+                            </p>
+                        </div>
+                        <div class="col m6">
+                            <p>③结算企业和接受服务企业均为母公司，且授予本公司职工的是其本身权益工具</p>
+                            <p>借：管理费用等<br>&emsp;贷：资本公积——其他资本公积（按权益结算股份支付计量原则确认资本公积）</p>
+                            <p>④结算企业和接受服务企业均为母公司，且不是以其本身权益工具结算</p>
+                            <p>借：管理费用等<br>&emsp;贷：应付职工薪酬（按现金结算股份支付计量原则确认应付职工薪酬）</p>
+                        </div>
+                        <img src="img/chapter12_集团股份支付.png" style="padding-top:20px"></img>
                     </div>
                 </div>
                 <!-- 13.或有事项 -->
