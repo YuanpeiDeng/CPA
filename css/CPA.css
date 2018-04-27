@@ -1,3 +1,11 @@
+/*********************
+  Media Query Classes
+**********************/
+@media only screen and (max-width: 992px) {
+  img {
+    width: 100%;
+  }
+}
 /*基本css*/
 .title{
     text-align: center;
@@ -22,6 +30,9 @@
 }
 .Tomato{
     color:Tomato;
+}
+.Red{
+    color:#f31d1d;
 }
 .fiftyPercent{
     width:50%;
