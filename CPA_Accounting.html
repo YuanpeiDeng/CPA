@@ -7,7 +7,7 @@
     <link type="text/css" rel="stylesheet" href="css/CPA.css"/>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
@@ -825,14 +825,14 @@ $(document).ready(function(){
                     </div>
 
                     <!-- 投资性房地产的转换和处置 -->
-                    <div class="row">
+                    <div class="row" style="margin:0">
                         <h5>投资性房地产的转换和处置</h5>
                         <!-- 转换 -->
-                        <div class="row">
+                        <div class="row" style="margin:0">
                             <!-- 投转非 -->
-                            <div class="row">
+                            <div class="row" style="margin:0">
                                 <blockquote>投资性房地产转换为非投资性房地产</blockquote>
-                                <div class="row">
+                                <div class="row" style="margin:0">
                                     <p>一、成本模式</p>
                                     <table class="bordered highlight">
                                         <thead>
@@ -857,7 +857,7 @@ $(document).ready(function(){
                                     </table>
                                 </div>
 
-                                <div class="row">
+                                <div class="row" style="margin:0">
                                     <p>二、公允价值模式</p>
                                     <table class="bordered highlight">
                                         <thead>
@@ -884,9 +884,9 @@ $(document).ready(function(){
                             </div>
 
                             <!-- 非转投 -->
-                            <div class="row">
+                            <div class="row" style="margin:0">
                                 <blockquote>非投资性房地产转换为投资性房地产</blockquote>
-                                <div class="row">
+                                <div class="row" style="margin:0">
                                     <p>一、成本模式</p>
                                     <table class="bordered highlight">
                                         <thead>
@@ -912,7 +912,7 @@ $(document).ready(function(){
                                     </table>
                                 </div>
 
-                                <div class="row">
+                                <div class="row" style="margin:0">
                                     <p>二、公允价值模式</p>
                                     <table class="bordered highlight">
                                         <thead>
@@ -945,7 +945,7 @@ $(document).ready(function(){
                         </div>
 
                         <!-- 处置 -->
-                        <div class="row">
+                        <div class="row" style="margin:0">
                             <blockquote>投资性房地产的处置</blockquote>
                             <p>
                                 采用公允价值模式计量：<br>
@@ -1785,6 +1785,7 @@ $(document).ready(function(){
                     </div>
 
                 </div>
+
                 <!-- 12.股份支付 -->
                 <div class="row chapter section scrollspy" id="Chapter12">
                     <div class="row chapterTitle">
@@ -1870,7 +1871,7 @@ $(document).ready(function(){
                         </div>
                         <!-- 限制性股票的处理 -->
                         <div class="col m6">
-                            <blockquote>限制性股票分配现金股利的会计处理</blockquote>
+                            <blockquote>限制性股票<b>分配现金股利</b>的会计处理</blockquote>
                             <p><b>【关键点】</b>预计未来<b class="Tomato">可解锁</b>，现金股利通过“<b class="Tomato">利润分配</b>”科目核算；
                                 现金股利<b class="Tomato">可撤销</b>，应<b class="Tomato">减少其他应付款</b>。</b></p>
                             <table class="bordered">
@@ -1939,8 +1940,41 @@ $(document).ready(function(){
                         <div class="col m6"><img src="img/chapter12_集团股份支付.png" style="padding:20px; border:2px solid Red;"></img></div>
                     </div>
                 </div>
-                <!-- 13.或有事项 -->
 
+                <!-- 13.或有事项 -->
+                <div class="row chapter section scrollspy" id="Chapter13">
+                    <div class="row chapterTitle">
+                        <h3>第十三章 或有事项</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+                            <blockquote><b>预计负债</b>的确认条件</blockquote>
+                            <p>（1）该义务是企业承担的<b>现时义务</b></p>
+                            <p>（2）履行该义务<b>很可能</b>(>50%)导致经济利益流出企业</p>
+                            <p>（3）该义务的金额能够可靠地计量。</p>
+                            <p><b>【提示】</b>如果或有事项确认负债的三个条件<b>没有同时满足时</b>，则属于<b>或有负债</b>。</p>
+                        </div>
+                        <div class="col m6">
+                            <blockquote>最佳估计数的确定</blockquote>
+                            <img src="img/chapter13_最佳估计数.png" style="height: 100%;box-shadow: 2px 2px 5px #999;padding: 10px;"></img>
+                        </div>
+                        <div class="col m6">
+                            <blockquote>预期可获得补偿的处理</blockquote>
+                            <p>
+                                企业清偿预计负债所需支出全部或部分预期<b>由第三方补偿</b>的，补偿金额只有在<b>基本确定</b>能够收到时才能作为资产单独确认，确认的补偿金额<b>不应超过预计负债</b>的账面价值。<br>
+                                <b>【提示1】</b>或有事项确认为资产的前提条件是或有事项<b>已经确认为负债</b>。<br>
+                                <b>【提示2】</b>或有事项确认为资产通过“<b>其他应收款</b>”科目核算，但<b>不能冲减</b>预计负债的账面价值。<br>
+                                <b class="Tomato">没有预计负债，就没有或有资产。</b>
+                            </p>
+                            <div class="col m6">
+                                <p>1.或有事项确认<b>负债</b><br>借：营业外支出<br>&emsp;&emsp;管理费用（诉讼费）<br>&emsp;贷：预计负债</p>
+                            </div>
+                            <div class="col m6">
+                                <p>2.或有事项确认<b>资产</b><br>借：其他应收款<br>&emsp;贷：<b class="Tomato">营业外支出</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- 14.金融工具 -->
                 <div class="row chapter section scrollspy" id="Chapter14">
                     <div class="row chapterTitle">

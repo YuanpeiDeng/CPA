@@ -7,6 +7,9 @@
   }
 }
 /*基本css*/
+img{
+    max-width: 100%;
+}
 .title{
     text-align: center;
     padding: 20px !important;
@@ -33,6 +36,10 @@
 }
 .Red{
     color:#f31d1d;
+}
+/*row不往前缩进试行*/
+.chapter > .row{
+    margin:0 0 20px 0;
 }
 .fiftyPercent{
     width:50%;
