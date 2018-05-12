@@ -197,9 +197,9 @@ $(document).ready(function(){
                                             <td><a class="modal-trigger" href="#Payroll Payable">应付职工薪酬</a></td></tr>
                                         <tr>
                                             <td>
-                                                <a class='dropdown-button' href='#' data-activates='dropdown1'>应交税费<i class="material-icons right">arrow_drop_down</i></a>
+                                                <a class='dropdown-button' href='#' data-activates='TaxPayable'>应交税费<i class="material-icons right">arrow_drop_down</i></a>
                                                 <!-- 应交税费 Dropdown Structure -->
-                                                <ul id='dropdown1' class='dropdown-content'>
+                                                <ul id='TaxPayable' class='dropdown-content'>
                                                     <!-- 应交增值税Modal Trigger -->
                                                     <li><a class="modal-trigger" href="#Value Added Tax Payable">——应交增值税</a></li>
                                                     <li class="divider"></li>
@@ -1656,7 +1656,22 @@ $(document).ready(function(){
                         <div class="row">
                             <div class="row">
                                 <blockquote>短期薪酬——非货币性福利</blockquote>
-                                <p>应当按照<b class="Tomato">公允价值</b>计量。公允价值不能可靠取得的，可以采用成本计量</p>
+                                <p>
+                                    非货币性福利应当按照<b class="Tomato">公允价值</b>计量。公允价值不能可靠取得的，可以采用成本计量。
+                                    <a class='dropdown-button btn' href='#' data-activates='ShortTermPay'>短期薪酬包括：</a>
+                                </p>
+                                <!-- Dropdown Structure -->
+                                <ul id='ShortTermPay' class='dropdown-content'>
+                                    <li><a href="#!">工资、奖金、津贴、补贴</a></li>
+                                    <li><a href="#!">职工福利费</a></li>
+                                    <li><a href="#!">医疗保险费</a></li>
+                                    <li><a href="#!">医疗、工伤、生育等社会保险费</a></li>
+                                    <li><a href="#!">住房公积金</a></li>
+                                    <li><a href="#!">工会经费、职工教育经费</a></li>
+                                    <li><a href="#!">短期带薪缺勤</a></li>
+                                    <li><a href="#!">短期利润分享计划</a></li>
+                                    <li><a href="#!">非货币性福利</a></li>
+                                </ul>
                                 <table class="bordered">
                                     <thead>
                                         <tr class="centered"><th>自产产品</th><th>外购商品</th><th>房屋资产</th><th>支付了补贴的商品或服务</th><tr>
@@ -1982,7 +1997,6 @@ $(document).ready(function(){
                         <h3>第十四章 金融工具</h3>
                     </div>
 
-                    <!-- 第二节 金融资产和金融负债的分类和重分类 -->
                     <div class="row">
                         <div class="col m6">
                             <blockquote>金融资产的分类</blockquote>
@@ -1999,7 +2013,9 @@ $(document).ready(function(){
                             <blockquote>金融资产分类与计量—决策树</blockquote>
                             <img src="img/chapter14_金融资产分类与计量—决策树.png"></img>
                         </div>
+                    </div>
 
+                    <div class="row">
                         <div class="col m6">
                             <blockquote>金融负债和权益工具的区分</blockquote>
                             <table class="bordered">
@@ -2031,7 +2047,7 @@ $(document).ready(function(){
                         </div>
 
                         <div class="col m6">
-                            <blockquote>金融资产的后续计量</blockquote>
+                            <blockquote>会计处理举例</blockquote>
                             <p>以公允价值计量且其变动计入当期损益的金融资产 --> 核算科目：交易性金融资产<br></p>
                             <div class="row" style="margin:0">
                                 <div class="col m6">
@@ -2079,6 +2095,52 @@ $(document).ready(function(){
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col m6">
+                            <blockquote>金融资产后续计量</blockquote>
+                            <table class="bordered">
+                                <thead><tr>
+                                    <th colspan="2" style="width:15%">类别</th>
+                                    <th style="width:8%">后续计量</th>
+                                    <th style="width:45%">影响损益</th>
+                                    <th style="width:32%">影响其他综合收益</th>
+                                </tr></thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">以摊余成本计量的金融资产</td><td>摊余成本</td>
+                                        <td>（1）使用实际利率法确认利息收入<br>（2）减值<br>（3）外汇利得和损失<br>（4）终止确认产生的利得或损失</td>
+                                        <td style="text-align:center">无</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">以公允价值计量且其变动计入其他综合收益的金融资产</td><td>债务工具</td><td>公允价值</td>
+                                        <td>（1）使用实际利率法确认利息收入<br>（2）减值<br>（3）外汇利得和损失<br>（4）终止确认产生的利得或损失</td>
+                                        <td>（1）并非在损益中确认的公允价值变动<br>（2）终止确认时累计金额转回至损益</td>
+                                    </tr>
+                                    <tr>
+                                        <td>权益工具</td><td>公允价值</td>
+                                        <td style="text-align:center">正常股利收入</td>
+                                        <td>（1）公允价值变动和外汇差额部分<br>（2）终止确认时累计的金额不得重分类至损益，可在权益内划转</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">以公允价值计量且其变动计入当期损益的金融资产</td><td>公允价值</td>
+                                        <td>（1）使用实际利率法确认利息收入<br>（2）外汇利得和损失<br>（3）终止确认产生的利得或损失</td>
+                                        <td style="text-align:center">无</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col m6">
+                            <blockquote>减值要求在报告日的应用</blockquote>
+                            <img src="img/chapter14_金融工具减值要求.jpg"></img>
+                        </div>
+
+                        <div class="col m6">
+                            <blockquote>金融工具的重分类</blockquote>
+                            <p style="text-align:center"><a href="http://course.dongao.com/lecture/20411">金融工具的重分类</a></p>
                         </div>
                     </div>
                 </div>
