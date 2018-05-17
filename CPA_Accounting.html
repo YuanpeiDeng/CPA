@@ -1238,28 +1238,56 @@ $(document).ready(function(){
                         <div class="row">
                             <blockquote>核算方法的转换</blockquote>
                             <table class="bordered">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2" style="width:33%">转换形式</th><th style="width:33%">个别报表</th><th style="width:33%">合并报表</th>
+                                    </tr>
+                                </thead>
                                 <tbody>
                                     <tr>
-                                        <td colspan="2" style="width:33%">转换形式</td><td style="width:33%">个别报表</td><td style="width:33%">合并报表</td>
+                                        <td rowspan="3">上升</td><td><a class="modal-trigger" href="#GongyunToQuanyi">1. 公允价值 ———> 权益法</a></td><td>原投资调整到公允价值</td><td></td>
+                                        <!-- Modal Structure -->
+                                        <div id="GongyunToQuanyi" class="modal modal-fixed-footer">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4>公允价值计量转换为权益法</h4>
+                                                </div>
+                                                <div class="col m6">
+                                                    <p>
+                                                        追加投资日长期股权投资初始投资成本 = 转换日原投资公允价值 + 新增投资的成本
+                                                    </p>
+                                                    <p>
+                                                        1.原投资为以公允价值计量且其变动计入<b>当期损益</b>的金融资产追加投资日，
+                                                        原投资公允价值与账面价值的差额计入投资收益，且原投资因公允价值变动形成的<b>公允价值变动损益应转入投资收益</b>。
+                                                    </p>
+                                                    <p>
+                                                        2.原投资为以公允价值计量且其变动计入<b>其他综合收益</b>的金融资产的<b>非交易性权益工具</b>投资追加投资日，
+                                                        原投资<b>公允价值</b>与<b>账面价值的差额</b>计入<b class="Tomato">留存收益</b>，且原投资因公允价值变动形成的其他综合收益应<b class="Tomato">转入留存收益</b>。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                                            </div>
+                                        </div>
                                     </tr>
                                     <tr>
-                                        <td rowspan="3">上升</td><td>1.公允价值计量转换为权益法</td><td>原投资调整到公允价值</td><td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a class="modal-trigger" href="#ToChengben">2.权益法转换为成本法</a></td><td>原投资<b>保持账面价值</b></td><td>原投资调整到公允价值</td>
+                                        <td><a class="modal-trigger" href="#ToChengben">2. 权益法 ————> 成本法</a></td><td>原投资<b>保持账面价值</b></td><td><b class="Tomato">原投资调整到公允价值</b></td>
                                         <!-- Modal Structure -->
                                         <div id="ToChengben" class="modal modal-fixed-footer">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h4>公允价值计量或成本法转换为权益法</h4>
+                                                    <h4>公允价值计量权益法或转换为成本法</h4>
                                                 </div>
-                                                <div class="row">
+                                                <div class="col m6">
                                                     <p>
                                                         1.个别报表<br>
-                                                        （1）原投资采用权益法核算<br>
-                                                        追加投资日长期股权投资初始投资成本=原投资账面价值+新增投资成本<br>
+                                                        （1）原投资采用<b>权益法</b>核算<br>
+                                                        追加投资日长期股权投资初始投资成本 = 原投资<b>账面价值</b> + 新增投资成本<br>
                                                         （2）原投资按公允价值计量<br>
-                                                        追加投资日长期股权投资初始投资成本=原投资公允价值+新增投资成本<br>
+                                                        追加投资日长期股权投资初始投资成本 = 原投资公允价值 + 新增投资成本<br>
+                                                    </p>
+                                                    <p>
                                                         2.合并报表<br>
                                                         参见企业合并章节通过多次交易分步实现非同一控制下的企业合并的相关处理。
                                                     </p>
@@ -1271,11 +1299,12 @@ $(document).ready(function(){
                                         </div>
                                     </tr>
                                     <tr>
-                                        <td><a class="modal-trigger" href="#ToChengben">3.公允价值计量转换为成本法（非同一控制）</a></td><td>原投资调整到转换日公允价值</td><td>因个别报表原投资公允价值与账面价值相等，所以无需调整</td>
+                                        <td><a class="modal-trigger" href="#ToChengben">3. 公允价值 ———> 成本法（非同一控制）</a></td>
+                                        <td>原投资调整到转换日公允价值</td><td>因个别报表原投资公允价值与账面价值相等，所以无需调整</td>
                                     </tr>
                                     <tr>
                                         <td rowspan="3">下降</td>
-                                        <td><a class="modal-trigger" href="#ChengbenToQuanyi">4.成本法转换为权益法</a></td>
+                                        <td><a class="modal-trigger" href="#ChengbenToQuanyi">4. 成本法 ————> 权益法</a></td>
                                         <!-- Modal Structure -->
                                         <div id="ChengbenToQuanyi" class="modal modal-fixed-footer">
                                             <div class="modal-content">
@@ -1286,20 +1315,18 @@ $(document).ready(function(){
                                                     <div class="col m6">
                                                         <p>
                                                             1.个别财务报表<br>
-                                                            关键点：剩余持股比例部分应视同取得投资时点即采用权益法核算，即对剩余持股比例投资追溯调整，将其调整到权益法核算的结果。<br>
+                                                            关键点：剩余持股比例部分应<b>视同取得投资时点即采用权益法核算</b>，即对剩余持股比例投资追溯调整，将其调整到权益法核算的结果。<br>
                                                             （1）处置部分<br>
                                                             借：银行存款<br>
                                                             &emsp;贷：长期股权投资<br>
                                                             &emsp;&emsp;&emsp;投资收益（差额）<br>
                                                             （2）剩余部分追溯调整<br>
                                                             ①投资时点商誉的追溯<br>
-                                                            剩余的长期股权投资初始投资成本大于按照剩余持股比例计算原投资时应享有被投资单位可辨认净资产公允价值份额的,
-                                                            属于投资作价中体现的商誉部分,不调整长期股权投资的账面价值；属于初始投资成本小于原投资时应享有被投资单位可
-                                                            辨认净资产公允价值份额的,在调整长期股权投资成本的同时,应调整留存收益。<br>
+                                                            正商誉不调整，负商誉调整<b>留存收益</b>。<br>
                                                             ②投资后的追溯调整<br>
                                                             借：长期股权投资<br>
-                                                            &emsp;贷：留存收益（盈余公积、利润分配——未分配利润）（原投资时至处置投资当期期初被投资单位留存收益变动×剩余持股比例）<br>
-                                                            &emsp;&emsp;&emsp;投资收益（处置投资当期期初至处置日被投资单位的净损益变动×剩余持股比例）<br>
+                                                            &emsp;贷：留存收益（原投资时至处置投资当期期初被投资单位留存收益变动<b>(以前年度)</b> × 剩余持股比例）<br>
+                                                            &emsp;&emsp;&emsp;投资收益（处置投资当期期初至处置日被投资单位的净损益变动<b>(处置日年度)</b> × 剩余持股比例）<br>
                                                             &emsp;&emsp;&emsp;其他综合收益（被投资单位其他综合收益变动×剩余持股比例）<br>
                                                             &emsp;&emsp;&emsp;资本公积——其他资本公积（其他原因导致被投资单位其他所有者权益变动×剩余持股比例）<br>
                                                             【提示】调整留存收益和投资收益时，应自被投资方实现的净损益中扣除已发放或已宣告发放的现金股利或利润。
@@ -1316,7 +1343,7 @@ $(document).ready(function(){
                                                             关键点：因控制权发生改变（由原控制转为不再控制），在合并财务报表中剩余股权投资要重新计量，即视为将投资全部出售
                                                             （售价与账面价值之间的差额计入投资收益），再将剩余部分投资按出售日的公允价值回购。<br>
                                                             丧失控制权日合并财务报表中的投资收益<br>
-                                                            合并财务报表中确认的投资收益=处置股权取得的对价与剩余股权公允价值之和-按原持股比例计算应享有原有子公司自购买日开
+                                                            合并财务报表中确认的<b>投资收益</b>=处置股权取得的对价与剩余股权公允价值之和-按原持股比例计算应享有原有子公司自购买日开
                                                             始持续计算的净资产份额-按原持股比例计算的商誉+与原有子公司股权投资相关的其他综合收益（可转损益的部分）、其他权益变动<br>
                                                             丧失控制权日合并财务报表中的调整分录<br>
                                                             ①将剩余股权投资由个别财务报表中的账面价值在合并财务报表中调整到丧失控制权日的公允价值，其调整分录为：借记“长期股权投资”科目，贷记“投资收益”科目，或作相反分录。<br>
@@ -1331,10 +1358,10 @@ $(document).ready(function(){
                                             </div>
                                         </div>
                                         <td>剩余投资追溯调整权益法账面价值</td>
-                                        <td>剩余投资调整到公允价值</td>
+                                        <td><b class="Tomato">剩余投资调整到公允价值</b></td>
                                     </tr>
                                     <tr>
-                                        <td><a class="modal-trigger" href="#QuanyiToGongyun">5.权益法转换为公允价值计量</a></td><td>剩余投资调整到公允价值</td><td></td>
+                                        <td><a class="modal-trigger" href="#QuanyiToGongyun">5. 权益法 ————> 公允价值</a></td><td>剩余投资调整到公允价值</td><td></td>
                                         <!-- Modal Structure -->
                                         <div id="QuanyiToGongyun" class="modal modal-fixed-footer">
                                             <div class="modal-content">
@@ -1350,9 +1377,11 @@ $(document).ready(function(){
                                                             &emsp;&emsp;&emsp;投资收益<br>
                                                         </p>
                                                         <p>
-                                                            2.将原权益法核算时确认的全部其他综合收益（假定被投资单位实现的其他综合收益均可结转到损益）转入投资收益。<br>
+                                                            2.将原权益法核算时确认的全部其他综合收益转入投资收益或留存收益。<br>
                                                             借：其他综合收益<br>
-                                                            &emsp;贷：投资收益<br>
+                                                            &emsp;贷：投资收益（可转损益部分）<br>
+                                                            &emsp;&emsp;&emsp;盈余公积（不可转损益部分）<br>
+                                                            &emsp;&emsp;&emsp;利润分配——未分配利润（不可转损益部分）
                                                             或作相反分录。
                                                         </p>
                                                     </div>
@@ -1364,8 +1393,8 @@ $(document).ready(function(){
                                                             或作相反分录。<br>
                                                         </p>
                                                         <p>
-                                                            4.剩余股权投资转为可供出售金融资产等<br>
-                                                            借：可供出售金融资产等（转换日公允价值）<br>
+                                                            4.剩余股权投资转为以公允价值计量且其变动计入<b>当期损益</b>的金融资产或以公允价值计量且其变动计入<b>其他综合收益</b>的金融资产的非交易性权益工具投资<br>
+                                                            借：可供出售金融资产或其他权益工具投资（转换日公允价值）<br>
                                                             &emsp;贷：长期股权投资（剩余投资账面价值）<br>
                                                             &emsp;&emsp;&emsp;投资收益（差额）
                                                         </p>
@@ -1378,7 +1407,34 @@ $(document).ready(function(){
                                         </div>
                                     </tr>
                                     <tr>
-                                        <td>6.成本法转换为公允价值计量</td><td>剩余投资调整到公允价值</td><td>无需调整剩余投资价值</td>
+                                        <td><a class="modal-trigger" href="#ChengbenToGongyun">6. 成本法 ————> 公允价值</a></td><td>剩余投资调整到公允价值</td><td>无需调整剩余投资价值</td>
+                                        <!-- Modal Structure -->
+                                        <div id="ChengbenToGongyun" class="modal modal-fixed-footer">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4>成本法转换为公允价值计量</h4>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col m6">
+                                                        <p>
+                                                            1.确认有关股权投资的处置损益<br>
+                                                            借：银行存款<br>
+                                                            &emsp;贷：长期股权投资<br>
+                                                            &emsp;&emsp;&emsp;投资收益<br>
+                                                        </p>
+                                                        <p>
+                                                            2.剩余股权投资转为以公允价值计量且其变动计入当期损益的金融资产或以公允价值计量且其变动计入其他综合收益的金融资产的非交易性权益工具投资<br>
+                                                            借：交易性金融资产或其他权益工具投资（剩余投资转换日公允价值）<br>
+                                                            &emsp;贷：长期股权投资（剩余投资账面价值）<br>
+                                                            &emsp;&emsp;&emsp;投资收益（差额，可能在借方）
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                                            </div>
+                                        </div>
                                     </tr>
                                 </tbody>
                             </table>
