@@ -37,6 +37,9 @@ img{
 .Red{
     color:#f31d1d;
 }
+.BlueBlock{
+    border-left: 5px solid #2e72d2
+}
 /*row不往前缩进试行*/
 .chapter > .row{
     margin:0 0 20px 0;
