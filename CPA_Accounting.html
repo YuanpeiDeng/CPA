@@ -426,28 +426,7 @@ $(document).ready(function(){
                             <div class="col m4 s4">
                                 <table class="bordered highlight kemu">
                                     <tbody>
-                                        <tr>
-                                            <td>
-                                                <!-- Modal Trigger -->
-                                                <a class="modal-trigger" href="#Current Year Profits">本年利润</a>
-                                            </td>
-                                            <!-- Modal Structure -->
-                                            <div id="Current Year Profits" class="modal modal-fixed-footer">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h4>本年利润</h4>
-                                                    </div>
-                                                    <p>用途：核算企业当期实现的净利润。</p>
-                                                    <p>所有损益类账户期末均结转至“本年利润”账户</p>
-                                                    <p>借方：期末各费用损失转入数</p>
-                                                    <p>贷方：期末各收入账户转入数</p>
-                                                    <p>期末若为借方余额，则表示亏损数额。年度终了，将全部余额结转到“利润分配-未分配利润”账户中，结转后无余额。</p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
-                                                </div>
-                                            </div>
-                                        </tr>
+                                        <tr><td><a class="modal-trigger" href="#Current Year Profits">本年利润</a></td></tr>
                                         <tr><td>利润分配</td></tr>
                                     </tbody>
                                 </table>
@@ -473,6 +452,23 @@ $(document).ready(function(){
                                 <p>企业接受控股股东（或控股股东的子公司）或非控股股东（或非控股股东的子公司）直接或间接代为偿债，
                                     债务豁免或捐赠，经济实质表明属于控股股东或非控股股东对企业的资本性投入，
                                     应当将相关的利得计入所有者权益（资本公积）。</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                            </div>
+                        </div>
+
+                        <!-- 本年利润 -->
+                        <div id="Current Year Profits" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4>本年利润</h4>
+                                </div>
+                                <p>用途：核算企业当期实现的净利润。</p>
+                                <p>所有损益类账户期末均结转至“本年利润”账户</p>
+                                <p>借方：期末各费用损失转入数</p>
+                                <p>贷方：期末各收入账户转入数</p>
+                                <p>期末若为借方余额，则表示亏损数额。年度终了，将全部余额结转到“利润分配-未分配利润”账户中，结转后无余额。</p>
                             </div>
                             <div class="modal-footer">
                                 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
@@ -553,6 +549,49 @@ $(document).ready(function(){
 
                     </div>
                     <!-- end会计科目 -->
+
+                    <div class="row">
+                        <blockquote>一些其他概念</blockquote>
+                        <a class="modal-trigger" href="#Inventory Profit and Losses">关于盘盈&amp;盘亏</a>
+                        <!-- 盘盈&盘亏 -->
+                        <div id="Inventory Profit and Losses" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4>盘盈/盘亏</h4>
+                                </div>
+                                <div class="col m12">
+                                    <table class="bordered">
+                                        <thead>
+                                            <tr><th></th><th style="width:45%">盘盈</th><th style="width:45%">盘亏</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><b>现金</b></td>
+                                                <td>贷：营业外收入(无主款项)<br>&emsp;&emsp;其他应付款(有主款项)<br></td>
+                                                <td>借：管理费用(无责任人)<br>&emsp;&emsp;其他应收款(有责任人)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>存货</b></td>
+                                                <td>贷：管理费用</td>
+                                                <td>借：管理费用(管理不善)<br>&emsp;&emsp;其他应收款(责任人赔偿部分)<br>&emsp;&emsp;应交税费——应交增值税（进项税额转出）<br>
+                                                    <p style="text-align:center">or</p>借：营业外支出(自然灾害等原因)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>固定<br>资产</b></td>
+                                                <td>1.调整以前年度损益<br>借：固定资产<br>&emsp;贷：以前年度损益调整<br>
+                                                    2.调整所得税<br>借：以前年度损益调整<br>&emsp;贷：应交税费——应交所得税<br>
+                                                    3.结转以前年度损益调整<br>借：以前年度损益调整<br>&emsp;贷：利润分配——未分配利润</td>
+                                                <td>借：管理费用(管理不善)<br>&emsp;&emsp;其他应收款(责任人赔偿部分)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- 3.存货 -->
