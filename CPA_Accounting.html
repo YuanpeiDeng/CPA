@@ -719,7 +719,7 @@ $(document).ready(function(){
                     <!-- 固定资产处置 -->
                     <div class="row">
                         <h5>固定资产处置</h5>
-                        <div class="row">
+                        <div class="col m12">
                             <blockquote>处置的账务处理</blockquote>
                             <table class="bordered">
                                 <thead>
@@ -905,14 +905,14 @@ $(document).ready(function(){
                     </div>
 
                     <!-- 投资性房地产的转换和处置 -->
-                    <div class="row" style="margin:0">
+                    <div class="row margin0">
                         <h5>投资性房地产的转换和处置</h5>
                         <!-- 转换 -->
-                        <div class="row" style="margin:0">
+                        <div class="row margin0">
                             <!-- 投转非 -->
-                            <div class="row" style="margin:0">
+                            <div class="row margin0">
                                 <blockquote>投资性房地产转换为非投资性房地产</blockquote>
-                                <div class="row" style="margin:0">
+                                <div class="row margin0">
                                     <p>一、成本模式</p>
                                     <table class="bordered highlight">
                                         <thead>
@@ -937,7 +937,7 @@ $(document).ready(function(){
                                     </table>
                                 </div>
 
-                                <div class="row" style="margin:0">
+                                <div class="row margin0">
                                     <p>二、公允价值模式</p>
                                     <table class="bordered highlight">
                                         <thead>
@@ -964,9 +964,9 @@ $(document).ready(function(){
                             </div>
 
                             <!-- 非转投 -->
-                            <div class="row" style="margin:0">
+                            <div class="row margin0">
                                 <blockquote>非投资性房地产转换为投资性房地产</blockquote>
-                                <div class="row" style="margin:0">
+                                <div class="row margin0">
                                     <p>一、成本模式</p>
                                     <table class="bordered highlight">
                                         <thead>
@@ -992,7 +992,7 @@ $(document).ready(function(){
                                     </table>
                                 </div>
 
-                                <div class="row" style="margin:0">
+                                <div class="row margin0">
                                     <p>二、公允价值模式</p>
                                     <table class="bordered highlight">
                                         <thead>
@@ -1025,7 +1025,7 @@ $(document).ready(function(){
                         </div>
 
                         <!-- 处置 -->
-                        <div class="row" style="margin:0">
+                        <div class="row margin0">
                             <blockquote>投资性房地产的处置</blockquote>
                             <p>
                                 采用公允价值模式计量：<br>
@@ -1189,7 +1189,7 @@ $(document).ready(function(){
                     <!-- 二、长期股权投资的后续计量 -->
                     <div class="row">
                         <h5>二、长期股权投资的后续计量</h5>
-                        <div class="row" style="margin:0">
+                        <div class="row margin0">
                             <blockquote>成本法</blockquote>
                             <p>适用范围：投资方能够对被投资单位<b class="Tomato">实施控制</b>的长期股权投资应当采用成本法核算。</p>
                             <div class="col m6">
@@ -1208,7 +1208,7 @@ $(document).ready(function(){
                             </div>
                         </div>
 
-                        <div class="row" style="margin:0">
+                        <div class="row margin0">
                             <blockquote>权益法</blockquote>
                             <div class="col m6">
                                 <p>
@@ -1244,7 +1244,7 @@ $(document).ready(function(){
                             </div>
                         </div>
 
-                        <div class="row" style="margin:0">
+                        <div class="row margin0">
                             <blockquote><b class="Tomato">核算方法的转换</b></blockquote>
                             <table class="bordered">
                                 <thead>
@@ -1731,9 +1731,6 @@ $(document).ready(function(){
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="col m6">
-
-                                </div>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -1784,108 +1781,106 @@ $(document).ready(function(){
                     </div>
                     <div class="row">
                         <!-- 职工薪酬 -->
-                        <div class="row">
-                            <div class="row">
-                                <blockquote>短期薪酬——非货币性福利</blockquote>
-                                <p>
-                                    非货币性福利应当按照<b class="Tomato">公允价值</b>计量。公允价值不能可靠取得的，可以采用成本计量。
-                                    <a class='dropdown-button btn' href='#' data-activates='ShortTermPay'>短期薪酬包括：</a>
-                                </p>
-                                <!-- Dropdown Structure -->
-                                <ul id='ShortTermPay' class='dropdown-content'>
-                                    <li><a href="#!">工资、奖金、津贴、补贴</a></li>
-                                    <li><a href="#!">职工福利费</a></li>
-                                    <li><a href="#!">医疗保险费</a></li>
-                                    <li><a href="#!">医疗、工伤、生育等社会保险费</a></li>
-                                    <li><a href="#!">住房公积金</a></li>
-                                    <li><a href="#!">工会经费、职工教育经费</a></li>
-                                    <li><a href="#!">短期带薪缺勤</a></li>
-                                    <li><a href="#!">短期利润分享计划</a></li>
-                                    <li><a href="#!">非货币性福利</a></li>
-                                </ul>
-                                <table class="bordered">
-                                    <thead>
-                                        <tr class="centered"><th>自产产品</th><th>外购商品</th><th>房屋资产</th><th>支付了补贴的商品或服务</th><tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                1）决定发放非货币性福利<br>
-                                                借：生产成本<br>
-                                                &emsp;&emsp;管理费用<br>
-                                                &emsp;&emsp;在建工程<br>
-                                                &emsp;&emsp;研发支出等<br>
-                                                &emsp;贷：应付职工薪酬——非货币性福利<br>
-                                                2）将自产产品实际发放时<br>
-                                                借：应付职工薪酬——非货币性福利<br>
-                                                &emsp;贷：<b class="Tomato">主营业务收入</b><br>
-                                                &emsp;&emsp;&emsp;应交税费——应交增值税（销项税额）<br>
-                                                借：<b class="Tomato">主营业务成本</b><br>
-                                                &emsp;贷：库存商品
-                                            </td>
-                                            <td>
-                                                1）购入时<br>
-                                                借：库存商品等<br>
-                                                &emsp;&emsp;应交税费——应交增值税（进项税额）<br>
-                                                &emsp;贷：银行存款<br>
-                                                2）决定发放非货币性福利时<br>
-                                                借：生产成本<br>
-                                                &emsp;&emsp;管理费用<br>
-                                                &emsp;&emsp;在建工程<br>
-                                                &emsp;&emsp;研发支出等<br>
-                                                &emsp;贷：应付职工薪酬——非货币性福利<br>
-                                                3）将外购商品实际发放时<br>
-                                                借：应付职工薪酬——非货币性福利<br>
-                                                &emsp;贷：库存商品等<br>
-                                                &emsp;&emsp;&emsp;<b class="Tomato">应交税费——应交增值税（进项税额转出）</b>
-                                            </td>
-                                            <td>
-                                                1）企业<b>拥有</b>的房屋等资产<br>
-                                                借：管理费用等<br>
-                                                &emsp;贷：应付职工薪酬——非货币性福利<br>
-                                                借：应付职工薪酬——非货币性福利<br>
-                                                &emsp;贷：<b class="Tomato">累计折旧</b><br>
-                                                2）<b>租赁</b>住房等资产<br>
-                                                借：管理费用等<br>
-                                                &emsp;贷：应付职工薪酬——非货币性福利<br>
-                                                借：应付职工薪酬——非货币性福利<br>
-                                                &emsp;贷：<b class="Tomato">其他应付款</b><br>
-                                            </td>
-                                            <td>
-                                                规定服务年限：<br>
-                                                1）购入住房时<br>
-                                                借：固定资产<br>
-                                                &emsp;贷：银行存款<br>
-                                                2）出售住房时<br>
-                                                借：银行存款<br>
-                                                &emsp;&emsp;<b class="Tomato">长期待摊费用</b><br>
-                                                &emsp;贷：固定资产<br>
-                                                3）摊销长期待摊费用时<br>
-                                                借：管理费用等<br>
-                                                &emsp;贷：应付职工薪酬——非货币性福利<br>
-                                                借：应付职工薪酬——非货币性福利<br>
-                                                &emsp;贷：<b class="Tomato">长期待摊费用</b><br>
-                                                <p>未规定服务年限的记入资产成本或当期损益</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col m6">
-                                <blockquote>离职后福利——设定收益计划</blockquote>
-                                <p>
-                                    记入<b>当期损益</b>：<br>
-                                    ①当期服务成本<br>②过去服务成本(受益计划修改导致的计划义务现值增加或减少)<br>③结算利得和损失<br>④设定受益计划净负债或净资产的利息净额。
-                                </p>
-                                <p>
-                                    记入<b>其他综合收益</b>：<br>
-                                    设定受益净负债或净资产的重新计量，且在后续期间不应重分类计入损益。<br>
-                                    内容包括：<br>
-                                    （1）精算利得和损失<br>
-                                    （2）计划资产回报<br>
-                                    （3）资产上限影响的变动
-                                </p>
-                            </div>
+                        <div class="col m12">
+                            <blockquote>短期薪酬——非货币性福利</blockquote>
+                            <p>
+                                非货币性福利应当按照<b class="Tomato">公允价值</b>计量。公允价值不能可靠取得的，可以采用成本计量。
+                                <a class='dropdown-button btn' href='#' data-activates='ShortTermPay'>短期薪酬包括：</a>
+                            </p>
+                            <!-- Dropdown Structure -->
+                            <ul id='ShortTermPay' class='dropdown-content'>
+                                <li><a href="#!">工资、奖金、津贴、补贴</a></li>
+                                <li><a href="#!">职工福利费</a></li>
+                                <li><a href="#!">医疗保险费</a></li>
+                                <li><a href="#!">医疗、工伤、生育等社会保险费</a></li>
+                                <li><a href="#!">住房公积金</a></li>
+                                <li><a href="#!">工会经费、职工教育经费</a></li>
+                                <li><a href="#!">短期带薪缺勤</a></li>
+                                <li><a href="#!">短期利润分享计划</a></li>
+                                <li><a href="#!">非货币性福利</a></li>
+                            </ul>
+                            <table class="bordered">
+                                <thead>
+                                    <tr class="centered"><th>自产产品</th><th>外购商品</th><th>房屋资产</th><th>支付了补贴的商品或服务</th><tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            1）决定发放非货币性福利<br>
+                                            借：生产成本<br>
+                                            &emsp;&emsp;管理费用<br>
+                                            &emsp;&emsp;在建工程<br>
+                                            &emsp;&emsp;研发支出等<br>
+                                            &emsp;贷：应付职工薪酬——非货币性福利<br>
+                                            2）将自产产品实际发放时<br>
+                                            借：应付职工薪酬——非货币性福利<br>
+                                            &emsp;贷：<b class="Tomato">主营业务收入</b><br>
+                                            &emsp;&emsp;&emsp;应交税费——应交增值税（销项税额）<br>
+                                            借：<b class="Tomato">主营业务成本</b><br>
+                                            &emsp;贷：库存商品
+                                        </td>
+                                        <td>
+                                            1）购入时<br>
+                                            借：库存商品等<br>
+                                            &emsp;&emsp;应交税费——应交增值税（进项税额）<br>
+                                            &emsp;贷：银行存款<br>
+                                            2）决定发放非货币性福利时<br>
+                                            借：生产成本<br>
+                                            &emsp;&emsp;管理费用<br>
+                                            &emsp;&emsp;在建工程<br>
+                                            &emsp;&emsp;研发支出等<br>
+                                            &emsp;贷：应付职工薪酬——非货币性福利<br>
+                                            3）将外购商品实际发放时<br>
+                                            借：应付职工薪酬——非货币性福利<br>
+                                            &emsp;贷：库存商品等<br>
+                                            &emsp;&emsp;&emsp;<b class="Tomato">应交税费——应交增值税（进项税额转出）</b>
+                                        </td>
+                                        <td>
+                                            1）企业<b>拥有</b>的房屋等资产<br>
+                                            借：管理费用等<br>
+                                            &emsp;贷：应付职工薪酬——非货币性福利<br>
+                                            借：应付职工薪酬——非货币性福利<br>
+                                            &emsp;贷：<b class="Tomato">累计折旧</b><br>
+                                            2）<b>租赁</b>住房等资产<br>
+                                            借：管理费用等<br>
+                                            &emsp;贷：应付职工薪酬——非货币性福利<br>
+                                            借：应付职工薪酬——非货币性福利<br>
+                                            &emsp;贷：<b class="Tomato">其他应付款</b><br>
+                                        </td>
+                                        <td>
+                                            规定服务年限：<br>
+                                            1）购入住房时<br>
+                                            借：固定资产<br>
+                                            &emsp;贷：银行存款<br>
+                                            2）出售住房时<br>
+                                            借：银行存款<br>
+                                            &emsp;&emsp;<b class="Tomato">长期待摊费用</b><br>
+                                            &emsp;贷：固定资产<br>
+                                            3）摊销长期待摊费用时<br>
+                                            借：管理费用等<br>
+                                            &emsp;贷：应付职工薪酬——非货币性福利<br>
+                                            借：应付职工薪酬——非货币性福利<br>
+                                            &emsp;贷：<b class="Tomato">长期待摊费用</b><br>
+                                            <p>未规定服务年限的记入资产成本或当期损益</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col m6">
+                            <blockquote>离职后福利——设定收益计划</blockquote>
+                            <p>
+                                记入<b>当期损益</b>：<br>
+                                ①当期服务成本<br>②过去服务成本(受益计划修改导致的计划义务现值增加或减少)<br>③结算利得和损失<br>④设定受益计划净负债或净资产的利息净额。
+                            </p>
+                            <p>
+                                记入<b>其他综合收益</b>：<br>
+                                设定受益净负债或净资产的重新计量，且在后续期间不应重分类计入损益。<br>
+                                内容包括：<br>
+                                （1）精算利得和损失<br>
+                                （2）计划资产回报<br>
+                                （3）资产上限影响的变动
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -2180,7 +2175,7 @@ $(document).ready(function(){
                         <div class="col m6">
                             <blockquote>会计处理举例</blockquote>
                             <p>以公允价值计量且其变动计入当期损益的金融资产 --> 核算科目：交易性金融资产<br></p>
-                            <div class="row" style="margin:0">
+                            <div class="row margin0">
                                 <div class="col m6">
                                     <p>
                                         （1）企业取得交易性金融资产<br>
@@ -2200,7 +2195,7 @@ $(document).ready(function(){
                                     </p>
                                 </div>
                             </div>
-                            <div class="row" style="margin:0">
+                            <div class="row margin0">
                                 <div class="col m6">
                                     <p>
                                         （3）资产负债表日公允价值变动<br>
@@ -2464,16 +2459,152 @@ $(document).ready(function(){
                         <h3>第十六章 收入、费用和利润</h3>
                     </div>
 
+                    <!-- 第一节 收入 -->
+                    <div class="row">
+                        <h5>一、收入</h5>
+                        <div class="col m12">
+                            <blockquote>五步法模型</blockquote>
+                            <img src="img/chapter16_五步法模型.png"></img>
+                        </div>
+                        <div class="row margin0">
+                            <div class="col m6">
+                                <blockquote>识别合同</blockquote>
+                                <p>
+                                    1.收入确认的原则<br>
+                                    企业应当在履行了合同中的履约义务，即在客户<b class="Tomato">取得相关商品控制权</b>时确认收入。
+                                </p>
+                                <p>
+                                    2.收入确认的<b class="Tomato">前提条件</b><br>
+                                    合同各方已批准该合同并承诺将履行各自义务<br>
+                                    该合同明确了合同各方与所转让商品或提供劳务相关的权利和义务<br>
+                                    该合同有明确的与所转让商品相关的支付条款<br>
+                                    该合同具有<b>商业实质</b>，即履行该合同将改变企业未来现金流量的风险、时间分布或金额<br>
+                                    企业因向客户转让商品而有权取得的对价<b>很可能收回</b>
+                                </p>
+                            </div>
+                            <div class="col m6">
+                                <blockquote>识别履约义务</blockquote>
+                                <div class="col m8">
+                                    <img src="img/chapter16_识别履约义务.jpg"></img>
+                                </div>
+                                <div class="col m4">
+                                    <p>不可单独区分的特点：</p>
+                                    <p>
+                                        1.整合为组合产品<br>
+                                        2.重大修改或定制<br>
+                                        3.具有高度关联性
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin0">
+                            <div class="col m6">
+                                <blockquote>确定交易价格</blockquote>
+                                <img src="img/chapter16_交易价格.jpg"></img>
+                            </div>
+                            <div class="col m6">
+                                <blockquote>确认收入</blockquote>
+                                <div class="col m4">
+                                    <p>1.判断履约义务是否满足在<b>某一时段</b>内履行的条件，如不满足，则该履约义务属于在<b>某一时点</b>履行的履约义务。</p>
+                                </div>
+                                <div class="col m8">
+                                    <img src="img/chapter16_实现方式.png"></img>
+                                </div>
+                                <div class="col m12">
+                                    <p>
+                                        2.在某一时段内履行的履约义务的收入确认方法<br>
+                                        企业应当考虑商品的性质，采用产出法或投入法确定恰当的履约进度，并且在确定履约进度时，应当<b>扣除那些控制权尚未转移客户的商品和服务</b>。
+                                    </p>
+                                    <p>
+                                        3.在某一时点履行的履约义务。<br>
+                                        对于在某一时点履行的履约义务，企业应当在客户<b>取得相关商品控制权时</b>点确认收入。
+                                    </p>
+                                </div>
+                                <a class="modal-trigger waves-effect waves-light btn" href="#Chapter16_QueRenShouRu" style="float:right;">具体内容</a>
+                                <!-- 确认收入的具体内容 -->
+                                <div id="Chapter16_QueRenShouRu" class="modal modal-fixed-footer">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4>确认收入的具体内容</h4>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col m12">
+                                                <blockquote>某一时段或某一时点的区分</blockquote>
+                                                <p>满足下列条件<b class="Tomato">之一</b>的，属于在某一时段内履行履约义务；否则，属于在某一时点履行履约义务</p>
+                                                <table class="bordered">
+                                                    <thead><tr><th>条件</th><th>履约义务</th><th>举例</th></tr></thead>
+                                                    <tbody>
+                                                        <tr><td>(1)</td><td>客户在企业履约的同时即取得并消耗企业履约所带来的经济利益</td><td>常规或经常性的服务，如酒店管理、保洁服务</td></tr>
+                                                        <tr><td>(2)</td><td>客户能够控制企业履约过程中在建的商品</td><td>在客户场地上建造资产</td></tr>
+                                                        <tr>
+                                                            <td>(3)</td><td>企业履约过程中所产出的商品不具有可替代用途，且该企业在整个合同期间内有权就累计至今已完成的履约部分收取款项</td>
+                                                            <td>建造只有客户能够使用的专项资产，或按照客户的指示建造资产</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col m6">
+                                                <blockquote>投入法与产出法</blockquote>
+                                                <p>
+                                                    （1）产出法<br>
+                                                    产出法主要是根据已转移给客户的商品对于客户的价值确定履约进度，主要包括按照<b class="Tomato">实际测量的完工进度、评估已实现的结果、
+                                                    已达到的里程碑、时间进度、已完工或交付的产品</b>等确定履约进度的方法。
+                                                </p>
+                                                <p>
+                                                    （2）投入法<br>
+                                                    投入法主要是根据企业履行履约义务的投入确定履约进度，主要包括以
+                                                    <b class="Tomato">投入的材料数量、花费的人工工时或机器工时、发生的成本和时间进度</b>等投入指标确定履约进度。<br>
+                                                    企业在采用成本法确定履约进度时，可能需要对已发生的成本进行适当调整的情形有：<br>
+                                                    ①已发生的成本<b>并未反映</b>企业履行其履约义务的进度；②已发生的成本与企业履行其履约义务的<b>进度不成比例</b>。
+                                                </p>
+                                            </div>
+                                            <div class="col m6">
+                                                <blockquote>确认收入的计算</blockquote>
+                                                <p>
+                                                    本期确认<b class="Tomato">收入</b>=合同的交易价格 × 履约进度 - 以前期间已确认收入<br>
+                                                    本期确认<b class="Tomato">费用</b>=合同预计总成本 × 履约进度 - 以前期间已确认费用<br>
+                                                    本期确认<b class="Tomato">毛利</b>=本期确认收入 - 本期确认费用
+                                                </p>
+                                            </div>
+                                            <div class="col m6">
+                                                <blockquote>判断取得商品控制权</blockquote>
+                                                <p>
+                                                    （1）企业就该商品享有现时收款权利，即客户就该商品负有现时付款义务。<br>
+                                                    （2）企业已将该商品的法定所有权转移给客户，即客户已拥有该商品的法定所有权。<br>
+                                                    （3）企业已将该商品实物转移给客户，即客户已实物占有该商品。(<b class="Tomato">售后代管商品</b>)<br>
+                                                    （4）企业已将该商品所有权上的主要风险和报酬转移给客户，即客户已取得该商品所有权上的主要风险和报酬。<br>
+                                                    （5）客户已接受该商品。<br>
+                                                    （6）其他表明客户已取得商品控制权的迹象。<br>
+                                                </p>
+                                            </div>
+                                            <div class="col m6">
+                                                <blockquote>售后代管商品</blockquote>
+                                                <p>
+                                                    <b>同时满足</b>下列条件，才表明客户取得了该商品的控制权：<br>
+                                                    ①该安排必须具有商业实质，例如该安排是应客户的要求而订立的；<br>
+                                                    ②属于客户的商品必须能够单独识别，例如将属于客户的商品单独存放在指定地点；<br>
+                                                    ③该商品可以随时交付给客户；<br>
+                                                    ④企业不能自行使用该商品或将该商品提供给其他客户。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- 第二节 费用 -->
                     <div class="row">
-                        <div class="row">
-                            <div class="col m6">
-                                <blockquote><b>期间费用</b></blockquote>
-                                <p>1.管理费用<br>指企业为组织和管理企业生产经营所发生的管理费用。</p>
-                                <p>2.销售费用<br>指企业在销售商品和材料、提供劳务的过程中发生的各种费用。</p>
-                                <p>3.财务费用<br>指企业为筹集生产经营所需资金等而发生的筹资费用。</p>
-                            </div>
-
+                        <h5>二、费用</h5>
+                        <div class="col m6">
+                            <blockquote>期间费用</blockquote>
+                            <p>1.管理费用<br>指企业为组织和管理企业生产经营所发生的管理费用。</p>
+                            <p>2.销售费用<br>指企业在销售商品和材料、提供劳务的过程中发生的各种费用。</p>
+                            <p>3.财务费用<br>指企业为筹集生产经营所需资金等而发生的筹资费用。</p>
                         </div>
                     </div>
                 </div>
