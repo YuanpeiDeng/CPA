@@ -527,8 +527,8 @@ $(document).ready(function(){
                                     <tbody>
                                         <tr><td>公允价值变动损益</td></tr>
                                         <tr><td>投资收益</td></tr>
-                                        <tr><td>营业外收入</td></tr>
-                                        <tr><td>营业外支出</td></tr>
+                                        <tr><td><a class="modal-trigger" href="#Nonbusiness Income">营业外收入</a></td></tr>
+                                        <tr><td><a class="modal-trigger" href="#Nonbusiness Expenditure">营业外支出</td></tr>
                                         <tr><td>税金及附加</td></tr>
                                     </tbody>
                                 </table>
@@ -547,6 +547,46 @@ $(document).ready(function(){
                             </div>
                         </div>
 
+                        <!-- 损益类 Modal Starts -->
+                        <!-- 营业外收入 -->
+                        <div id="Nonbusiness Income" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4>营业外收入</h4>
+                                </div>
+                                <p>
+                                    营业外收入是指企业发生的营业利润以外的收益。主要包括<b class="Tomato">非流动资产毁损报废</b>利得、
+                                    <b class="Tomato">债务重组利得</b>、与企业日常活动无关的<b class="Tomato">政府补助</b>、盘盈(现金)利得、捐赠利得等。<br>
+                                    【提示】<br>
+                                    （1）盘盈利得一般指的是现金盘盈。<br>
+                                    （2）企业接受控股股东（或控股股东的子公司）或非控股股东（或非控股股东的子公司）直接或间接代为偿债、债务豁免或捐赠，
+                                    经济实质表明属于控股股东或非控股股东对企业的资本性投入，应当将相关的利得计入所有者权益（资本公积）。<br>
+                                    （3）企业发生破产重整，其非控股股东因执行人民法院批准的破产重整计划，通过让渡所持有的该企业部分股权向企业债权人偿债的，
+                                    企业应将非控股股东所让渡股份按照其在让渡之日的公允价值计入所有者权益（资本公积），减少所豁免债务的账面价值，
+                                    并将让渡股份公允价值与被豁免的债务账面价值之间的差额计入当期损益。控股股东按照破产重整计划让渡了所持有的部分该企业股权向企业债权人偿债的，该企业也按此原则处理。
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                            </div>
+                        </div>
+
+                        <!-- 营业外支出 -->
+                        <div id="Nonbusiness Expenditure" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4>营业外支出</h4>
+                                </div>
+                                <p>
+                                    营业外支出是指企业发生的营业利润以外的支出，主要包括<b class="Tomato">非流动资产毁损报废损失</b>、
+                                    <b class="Tomato">债务重组损失</b>、公益性捐赠支出、非常损失、<b class="Tomato">固定资产盘亏</b>损失等。
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                            </div>
+                        </div>
+                        <!-- 损益类 Modal Ends-->
                     </div>
                     <!-- end会计科目 -->
 
@@ -2735,9 +2775,42 @@ $(document).ready(function(){
                         <h5>二、费用</h5>
                         <div class="col m6">
                             <blockquote>期间费用</blockquote>
-                            <p>1.管理费用<br>指企业为组织和管理企业生产经营所发生的管理费用。</p>
+                            <p>1.管理费用<br>指企业为组织和管理企业生产经营所发生的管理费用。<b class="Tomato">筹建期间的开办费</b></p>
                             <p>2.销售费用<br>指企业在销售商品和材料、提供劳务的过程中发生的各种费用。</p>
                             <p>3.财务费用<br>指企业为筹集生产经营所需资金等而发生的筹资费用。</p>
+                        </div>
+                    </div>
+
+                    <!-- 第三节 利润 -->
+                    <div class="row">
+                        <h5>三、利润</h5>
+                        <div class="col m6">
+                            <blockquote>利润构成</blockquote>
+                            <p>利润表为<b class="Tomato">多步式</b>。</p>
+                            <div class="col m8">
+                                <p>(一) 营业利润<br>营业利润 = &ensp;营业收入 - 营业成本<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;- 税金及附加<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;- 销售费用 - 管理费用 - 财务费用<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;- 资产减值损失<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;+公允价值变动收益( - 公允价值变动损失)<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;+投资收益( - 投资损失)<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;<b class="Tomato">+资产处置收益( - 资产处置损失)</b><br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;+其他收益
+                                </p>
+                            </div>
+                            <div class="col m4">
+                                <p>(二) 利润总额<br>利润总额 = &ensp;营业利润<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;+营业外收入<br>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;- 营业外支出</p>
+                                <p>(三) 净利润<br>净利润 = &ensp;利润总额<br>&emsp;&emsp;&emsp;&emsp;- <a href="#Chapter20">所得税费用</a></p>
+                            </div>
+                        </div>
+                        <div class="col m6">
+                            <blockquote>本年利润的会计处理</blockquote>
+                            <img src="img/chapter16_本年利润.png"></img>
+                            <blockquote>营业外收支</blockquote>
+                            <div class="col m6"><a class="modal-trigger waves-effect waves-light btn" href="#Nonbusiness Income">营业外收入</a></div>
+                            <div class="col m6"><a class="modal-trigger waves-effect waves-light btn" href="#Nonbusiness Expenditure">营业外支出</a></div>
                         </div>
                     </div>
                 </div>
