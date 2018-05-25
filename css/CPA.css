@@ -62,3 +62,14 @@ img{
     border-bottom:2px solid #aaa;
 }
 /*end*/
+
+/*16.收入、费用和利润*/
+.Chapter16_ContractCostModalTrigger >img{
+    padding:20px;
+}
+.Chapter16_ContractCostModalTrigger > img:hover{
+    box-shadow: 2px 2px 5px #999;
+    -webkit-transform: translate(0px,-4px);
+    transition-duration: 0.5s;
+}
+/*end*/

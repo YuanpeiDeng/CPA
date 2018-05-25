@@ -2540,6 +2540,7 @@ $(document).ready(function(){
                         <div class="row margin0">
                             <div class="col m6">
                                 <blockquote>确定交易价格</blockquote>
+                                <p>交易价格是企业向客户转让商品而<b class="Tomato">预期有权收取</b>的对价金额</p>
                                 <img src="img/chapter16_交易价格.jpg"></img>
                             </div>
 
@@ -2638,7 +2639,64 @@ $(document).ready(function(){
 
                             <div class="col m6">
                                 <blockquote>关于合同成本</blockquote>
-                                <img src="img/chapter16_关于合同成本.png"></img>
+                                <a class="modal-trigger" href="#Chapter16_ContractCost">
+                                    <div class="Chapter16_ContractCostModalTrigger"><img src="img/chapter16_关于合同成本.png"></img></div>
+                                </a>
+                                <!-- 合同成本 -->
+                                <div id="Chapter16_ContractCost" class="modal modal-fixed-footer">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4>合同成本</h4>
+                                        </div>
+                                        <div class="col m6">
+                                            <blockquote>合同履约成本</blockquote>
+                                            <p>
+                                                （一）企业为履行合同发生的成本，不属于其他企业会计准则规范范围且同时满足下列条件的，应当作为合同履约成本确认为<b class="Tomato">一项资产</b>：<br>
+                                                （1）该成本与一份当前或预期取得的合同<b class="Tomato">直接相关</b>，包括直接人工、直接材料、制造费用（或类似费用）、
+                                                明确由客户承担的成本以及仅因该合同而发生的其他成本；<br>
+                                                （2）该成本增加了企业<b class="Tomato">未来</b>用于履行履约义务的资源；<br>
+                                                （3）该成本预期能够收回。<br>
+                                            </p>
+                                            <p>
+                                                （二）企业应当在下列支出发生时，将其计入当期损益：<br>
+                                                （1）管理费用；<br>
+                                                （2）非正常消耗的直接材料、直接人工和制造费用（或类似费用），这些支出为履行合同发生，但未反映在合同价格中；<br>
+                                                （3）与履约义务中已履行部分相关的支出；<br>
+                                                （4）无法在尚未履行的与已履行的履约义务之间区分的相关支出。<br>
+                                            </p>
+                                        </div>
+
+                                        <div class="col m6">
+                                            <blockquote>合同取得成本</blockquote>
+                                            <p>
+                                                &emsp;&emsp;企业为取得合同发生的增量成本预期能够收回的，应当作为合同取得成本确认为一项资产；但是，该资产摊销期限不超过一年的，可以在发生时计入当期损益。<br>
+                                                &emsp;&emsp;<b class="Tomato">增量成本</b>，是指企业不取得合同就不会发生的成本。<br>
+                                                &emsp;&emsp;企业为取得合同发生的、除预期能够收回的增量成本之外的其他支出（如无论是否取得合同均会发生的差旅费等），
+                                                应当在发生时计入当期损益，但是，明确由客户承担的除外。
+                                            </p>
+                                        </div>
+
+                                        <div class="col m12">
+                                            <blockquote>摊销和减值</blockquote>
+                                            <p>
+                                                1.摊销<br>
+                                                &emsp;&emsp;对于确认为资产的合同履约成本和合同取得成本，企业应当采用与该资产相关的商品收入确认相同的基础
+                                                (即，在履约义务履行的时点或按照履约义务的履约进度)进行摊销，计入当期损益。
+                                            </p>
+                                            <p>
+                                                2.减值<br>
+                                                &emsp;&emsp;合同履约成本和合同取得成本的账面价值高于下列两项的差额的，<b>超出部分</b>应当计提减值准备，并确认为资产减值损失：<br>
+                                                &emsp;&emsp;(1)企业因转让与该资产相关的商品预期能够取得的剩余对价；<br>
+                                                &emsp;&emsp;(2)为转让该相关商品估计将要发生的成本。<br>
+                                                &emsp;&emsp;以前期间减值的因素之后发生变化，使得前款(1)减(2)的差额高于该资产账面价值的，
+                                                应当转回原已计提的资产减值准备，并计入当期损益，但转回后的资产账面价值不应超过假定不计提减值准备情况下该资产在转回日的账面价值
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col m6">
@@ -2759,6 +2817,16 @@ $(document).ready(function(){
                                                     <p>2.企业负有应客户要求回购商品义务的。(权利在客户，客户要卖，相当于看跌期权)</p>
                                                     <img src="img/chapter16_售后回购2.png"></img>
                                                 </div>
+                                            </div>
+                                            <!-- 质量保证条款 -->
+                                            <div class="col m6">
+                                                <blockquote>质量保证条款</blockquote>
+                                                <p>
+                                                    1、企业提供额外服务的，应当作为单项履约义务<br>
+                                                    2、企业未提供额外服务的，应按照或有事项要求进行会计处理<br>
+                                                    3、客户能够选择单独购买质量保证的，该质量保证构成单项履约义务<br>
+                                                    4、质量保证期越长，越有可能是单项履约义务
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
