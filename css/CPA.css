@@ -53,6 +53,10 @@ img{
 .centered,.centered > th{
     text-align: center;
 }
+.TotalBordered > tbody > tr > td,
+.TotalBordered > thead > tr > th{
+    border:1px solid #aaa;
+}
 /*end*/
 /*会计基础*/
 .kemu > thead{
