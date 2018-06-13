@@ -171,16 +171,13 @@
                                 <div class="col m12">
                                     <blockquote>应收账款等的备抵账户</blockquote>
                                     <img src="img/chapter0_坏账准备.png"></img>
-                                    <div class="col m6">
-                                        <p>借方：实际发生坏账及冲回多提坏账（减少）</p>
-                                        <p>贷方：计提坏账准备（增加），期末余额在贷方</p>
+                                    <div class="col m4">
+                                        <p>（1）期末计提<br>借：资产减值损失<br>&emsp;贷：坏账准备</p>
+                                        <p>（2）<b>注销/确认</b>坏账<br>借：坏账准备<br>&emsp;贷：应收账款</p>
                                     </div>
-                                    <div class="col m6">
-                                        <p>
-                                            发生坏账收回时：<br>
-                                            借：应收账款<br>&emsp;贷：坏账准备<br>
-                                            借：银行存款<br>&emsp;贷：应收账款
-                                        </p>
+                                    <div class="col m4"><p>（3）转回<br>借：坏账准备<br>&emsp;贷：资产减值损失</p></div>
+                                    <div class="col m4">
+                                        <p>（4）收回已注销坏账<br>借：应收账款<br>&emsp;贷：坏账准备<br>借：银行存款<br>&emsp;贷：应收账款</p>
                                         <p>坏账准备在贷方是因为在期末计提的时候，可以减少发生额</p>
                                     </div>
                                 </div>
@@ -516,7 +513,7 @@
                                         <tr><td>投资收益</td></tr>
                                         <tr><td><a class="modal-trigger" href="#Nonbusiness Income">营业外收入</a></td></tr>
                                         <tr><td><a class="modal-trigger" href="#Nonbusiness Expenditure">营业外支出</td></tr>
-                                        <tr><td>税金及附加</td></tr>
+                                        <tr><td><a class="modal-trigger" href="#Taxes and Surcharges">税金及附加</a></td></tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -573,6 +570,21 @@
                                 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
                             </div>
                         </div>
+
+                        <!-- 税金及附加 -->
+                        <div id="Taxes and Surcharges" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4>税金及附加</h4>
+                                </div>
+                                <p>
+                                    借：税金及附加<br>&emsp;贷：应交税费——应交城市维护建设税/教育费附加
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                            </div>
+                        </div>
                         <!-- 损益类 Modal Ends-->
                     </div>
                     <!-- end会计科目 -->
@@ -581,7 +593,7 @@
                     <div class="row">
                         <blockquote>一些其他概念</blockquote>
                         <div class="col m3">
-                            <a class="modal-trigger" href="#Inventory Profit and Losses">关于盘盈&amp;盘亏</a>
+                            <a class="modal-trigger btn" href="#Inventory Profit and Losses">关于盘盈&amp;盘亏</a>
                         </div>
                         <!-- 盘盈&盘亏 -->
                         <div id="Inventory Profit and Losses" class="modal modal-fixed-footer">
@@ -635,19 +647,19 @@
                                     <div class="col m12" style="margin-top:40px">
                                         <form>
                                             <div class="input-field col s6">
-                                                <input id="orig" type="text" class="validate" onkeyup="value=value.replace(/[^\d]/g,'') " ng-pattern="/[^a-zA-Z]/">
+                                                <input id="orig" type="text" class="validate">
                                                 <label>期初摊余成本</label>
                                             </div>
                                             <div class="input-field col s6">
-                                                <input id="rate" type="text" class="validate" onkeyup="value=value.replace(/[^\d]/g,'') " ng-pattern="/[^a-zA-Z]/">
+                                                <input id="rate" type="text" class="validate">
                                                 <label>实际利率 %</label>
                                             </div>
                                             <div class="input-field col s6">
-                                                <input id="interest" type="text" class="validate" onkeyup="value=value.replace(/[^\d]/g,'') " ng-pattern="/[^a-zA-Z]/">
+                                                <input id="interest" type="text" class="validate">
                                                 <label>应计利息</label>
                                             </div>
                                             <div class="input-field col s6">
-                                                <input id="year" type="text" class="validate" onkeyup="value=value.replace(/[^\d]/g,'') " ng-pattern="/[^a-zA-Z]/">
+                                                <input id="year" type="text" class="validate">
                                                 <label>第N年</label>
                                             </div>
                                         </form>
@@ -2894,6 +2906,13 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col m6">
+                                <blockquote>合同变更</blockquote>
+                                <p>（一）作为单独合同：<br>&emsp;&emsp;增加了<b class="Tomato">可明确区分</b>的商品及合同价款，且新增合同价款反映了新增商品<b>单独售价</b>。</p>
+                                <p>（二）作为原合同终止及新合同订立：<br>&emsp;&emsp;不属于（一），且合同变更日已转让商品与为转让商品之间<b>可明确区分</b>。</p>
+                                <p>（三）作为原合同组成部分：<br>&emsp;&emsp;不属于（一），且合同变更日已转让商品与为转让商品之间<b>不可明确区分</b>。</p>
+                            </div>
                         </div>
                     </div>
 
@@ -3706,7 +3725,58 @@
                         </div>
                     </div>
                 </div>
-                <!-- 25.持有待售i流动资产、处置组和终止经营 -->
+
+                <!-- 25.持有待售流动资产、处置组和终止经营 -->
+                <div class="row chapter section scrollspy" id="Chapter25">
+                    <div class="row chapterTitle">
+                        <h3>第二十五章 持有待售流动资产、处置组和终止经营</h3>
+                    </div>
+                    <div class="col m6">
+                        <blockquote>分类的基本要求</blockquote>
+                        <p>
+                            　　企业主要通过<b>出售而非持续使用</b>一项非流动资产或处置组收回其账面价值的，应当将其划分为持有待售类别。处置组中可能包含企业的<b class="Tomato">任何资产和负债</b>。<br>
+                            　　非流动资产或处置组划分为持有待售类别，应当<b>同时满足</b>下列条件：<br>
+                            （1）在当前状况下即可<b>立即出售</b>；<br>（2）出售极可能发生，即企业已经就一项出售计划作出决议且获得确定的购买承诺，预计出售将在<b>一年内</b>完成。
+                        </p>
+                        <p>
+                            延长一年期限的<b>例外条款</b>：<br>
+                            （1）意外设定条件：买方或其他方意外设定导致出售延期的条件，企业针对这些条件已经及时采取行动，且预计能够自设定导致出售延期的条件起一年内顺利化解延期因素。<br>
+                            （2）发生罕见情况：因发生罕见情况，导致持有待售的非流动资产或处置组未能在一年内完成出售，企业在最初一年内已经针对这些新情况采取必要措施且<b>重新满足</b>了持有待售类别的划分条件。
+                        </p>
+                    </div>
+                    <div class="col m6">
+                        <blockquote>分类的具体应用</blockquote>
+                        <p>
+                            1.专为转售而取得的非流动资产或处置组<br>
+                            　　在取得日满足“预计出售将在<b>一年内完成</b>”的规定条件，且短期（通常为<b>3个月</b>）内很可能满足持有待售类别的其他条件，企业应当在取得日将其划分为持有待售类别。
+                        </p>
+                        <p>
+                            2.持有待售的长期股权投资<br>
+                            　　企业因出售对子公司的投资等原因导致其<b>丧失</b>对子公司控制权的，无论出售后企业是否保留部分权益性投资，应当在拟出售对子公司投资满足持有待售类别划分条件时，
+                            在母公司个别财务报表中将对子公司投资<b class="Tomato">整体划分</b>为持有待售类别，在合并财务报表中将子公司<b class="Tomato">所有资产和负债</b>划分为持有待售类别。
+                        </p>
+                        <p>
+                            3.拟结束使用而非出售的非流动资产或处置组<br>　　企业不应当将拟结束使用而非出售的非流动资产或处置组划分为持有待售类别。
+                        </p>
+                    </div>
+
+                    <div class="col m12">
+                        <blockquote>持有待售类别的计量</blockquote>
+                        <div class="col m6"><img src="img/chapter25_持有待售类别的计量.jpg"></img></div>
+                        <div class="col m6">
+                            <p>
+                                　　分类时，其账面价值高于公允价值减去出售费用后的净额的，应当将账面价值减记至公允价值减去出售费用后的净额，
+                                减记的金额确认为<b>资产减值损失</b>，计入当期损益，同时计提持有待售资产减值准备。
+                            </p>
+                            <p>
+                                　　分类后，后续资产负债表日持有待售的非流动资产公允价值减去出售费用后的净额增加的，以前减记的金额应当<b>予以恢复</b>，并在划分为持有待售类别后确认的资产减值损失金额内转回，
+                                转回金额计入当期损益。<b class="Tomato">划分为持有待售类别前确认的资产减值损失不得转回</b>。持有待售的<b>非流动资产不应计提折旧或摊销</b>。
+                            </p>
+                            <p>　　持有待售的处置组有商誉先冲商誉，已抵减的商誉账面价值不得转回。持有待售的处置组中<b>负债的利息和其他费用</b>应当继续予以确认。</p>
+                            <p>　　不再满足条件时，按照：（1）划分前账面价值按照本应确认的折旧/摊销、减值等进行调整后的金额；（2）可收回金额 <b class="Tomato">孰低</b>计量</p>
+                        </div>
+                    </div>
+                </div>
                 <!-- 26.企业合并 -->
                 <div class="row chapter section scrollspy" id="Chapter26">
                     <div class="row chapterTitle">
