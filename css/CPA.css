@@ -57,6 +57,9 @@ img{
 .TotalBordered > thead > tr > th{
     border: 2px solid #aaa;
 }
+.ExternalLink{
+    text-align: center
+}
 /*end*/
 
 /*会计基础*/
