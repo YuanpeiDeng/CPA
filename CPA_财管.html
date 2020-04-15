@@ -207,6 +207,92 @@
                     </div>
                 </div>
 
+                <!-- 第三章 -->
+                <div class="row chapter section scrollspy" id="Chapter3">
+                    <div class="row chapterTitle">
+                        <h3>第三章 价值评估基础</h3>
+                    </div>
+                    <!-- 系数计算 -->
+                    <a class="modal-trigger btn " href="#AnnualPresentFinalCalculator">系数计算器</a>
+                    <!-- Modal -->
+                    <div id="AnnualPresentFinalCalculator" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>系数计算器</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col m12" style="margin-top:40px">
+                                    <form>
+                                        <div class="col m12">
+                                            年金现值系数: P/A
+                                            <div class="input-field inline">
+                                                <input id="PA_i" type="number" class="validate">
+                                                <label for="PA_i">i%</label>
+                                            </div>
+                                            <div class="input-field inline">
+                                                <input id="PA_N" type="number" class="validate">
+                                                <label for="PA_N">N</label>
+                                            </div>
+                                            <a class="btn-floating red" onclick="PA.value=PACalculate(PA_i.value/100,PA_N.value)"><i class="material-icons">trending_flat</i></a>
+                                            <div class="input-field inline"><input type="text" id="PA" disabled></input></div>
+                                        </div>
+
+                                        <div class="col m12">
+                                            复利现值系数: P/F
+                                            <div class="input-field inline">
+                                                <input id="PF_i" type="number" class="validate">
+                                                <label for="PF_i">i%</label>
+                                            </div>
+                                            <div class="input-field inline">
+                                                <input id="PF_N" type="number" class="validate">
+                                                <label for="PF_N">N</label>
+                                            </div>
+                                            <a class="btn-floating red" onclick="PF.value=PFCalculate(PF_i.value/100,PF_N.value)"><i class="material-icons">trending_flat</i></a>
+                                            <div class="input-field inline"><input type="text" id="PF" disabled></input></div>
+                                        </div>
+
+                                        <div class="col m12">
+                                            年金终值系数: F/A
+                                            <div class="input-field inline">
+                                                <input id="FA_i" type="number" class="validate">
+                                                <label for="FA_i">i%</label>
+                                            </div>
+                                            <div class="input-field inline">
+                                                <input id="FA_N" type="number" class="validate">
+                                                <label for="FA_N">N</label>
+                                            </div>
+                                            <a class="btn-floating red" onclick="FA.value=FACalculate(FA_i.value/100,FA_N.value)"><i class="material-icons">trending_flat</i></a>
+                                            <div class="input-field inline"><input type="text" id="FA" disabled></input></div>
+                                        </div>
+
+                                        <div class="col m12">
+                                            复利终值系数: F/P
+                                            <div class="input-field inline">
+                                                <input id="FP_i" type="number" class="validate">
+                                                <label for="FP_i">i%</label>
+                                            </div>
+                                            <div class="input-field inline">
+                                                <input id="FP_N" type="number" class="validate">
+                                                <label for="FP_N">N</label>
+                                            </div>
+                                            <a class="btn-floating red" onclick="FP.value=FPCalculate(FP_i.value/100,FP_N.value)"><i class="material-icons">trending_flat</i></a>
+                                            <div class="input-field inline"><input type="text" id="FP" disabled></input></div>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <a class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                        </div>
+                    </div>
+
+
+                </div>
                 <!-- 第六章 -->
                 <div class="row chapter section scrollspy" id="Chapter6">
                     <div class="row chapterTitle">
@@ -282,7 +368,7 @@
                                         <th width="40%">股利状态</th><th width="30%">股价计算</th><th>期望报酬率</th>
                                     </tr>
                                 </thead>
-                                
+
                                 <tbody>
                                     <tr>
                                         <td><b>零增长股票</b><br><img src="img-财管/CH6-01.png"></img></td>

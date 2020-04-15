@@ -20,3 +20,20 @@ function TanYuChengBen(orig,rate,interest,year){
         return TanYuChengBen(orig,rate,interest,year-1);
     }
 }
+
+//财管年金复利系数计算器
+function PACalculate(i,N){
+    return ((1-Math.pow((1+i),-N))/i).toFixed(4);
+}
+
+function PFCalculate(i,N){
+    return (Math.pow((1+i),-N)).toFixed(4);
+}
+
+function FACalculate(i,N){
+    return ((Math.pow((1+i),N)-1)/i).toFixed(4);
+}
+
+function FPCalculate(i,N){
+    return (Math.pow((1+i),N)).toFixed(4);
+}
